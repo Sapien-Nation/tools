@@ -1,5 +1,9 @@
 // types
-import { Channel } from 'types/channel';
+import { Channel } from './channel';
+
+export type Permissions = {
+  canAddChannel: boolean;
+};
 
 export type Tribe = {
   channels: Array<Channel>;
@@ -7,4 +11,5 @@ export type Tribe = {
   name: string;
   image: string;
   notificationNumber: number;
+  permissions: Permissions;
 };
