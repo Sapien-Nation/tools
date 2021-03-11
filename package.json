@@ -1,0 +1,14 @@
+
+{
+  "name": "tools",
+  "version": "1.0.0",
+  "description": "sapien tools",
+  "scripts": {
+    "lint": "eslint . --fix --ext .ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  },
+  "license": "ISC",
+}
