@@ -1,5 +1,5 @@
 // fixtures
-import user1 from 'fixtures/user_1.json';
+import user1 from '../fixtures/user_1.json';
 
 export const mockUser = ({ ...rest } = {}) => ({
   ...user1,
