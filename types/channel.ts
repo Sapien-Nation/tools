@@ -1,7 +1,17 @@
+// types
+import { Badge } from './badge';
+import { Rss } from './rss';
+
 export type Channel = {
+  contributorsBadges: Array<Badge>;
+  cover: string;
+  description: string;
   id: string;
-  name: string;
   image: string;
-  membersCount: number;
   lastUpdateAt: ISOString;
+  membersCount: number;
+  name: string;
+  subscriptionBadges: Array<Badge>;
+  rss: Array<Rss>;
+  viewersBadges: Array<Badge>;
 };

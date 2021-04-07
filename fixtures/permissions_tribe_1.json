@@ -1,3 +1,4 @@
 {
-  "canAddChannel": true
+  "canAddChannel": true,
+  "canAddSquare": true
 }
