@@ -1,11 +1,14 @@
 // fixtures
 import user1 from '../fixtures/user_1.json';
 
-export const mockUser = ({ ...rest } = {}) => ({
+// types
+import type { User } from '../types/user';
+
+export const mockUser = (props: Partial<User> = {}) => ({
   ...user1,
-  ...rest,
+  ...props,
 });
 
-export const mockUsers = () => {
-  return [user1];
+export const mockUsers = (users: Array<User> = []) => {
+  return [user1, ...users];
 };

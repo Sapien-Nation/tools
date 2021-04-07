@@ -5,11 +5,14 @@ import topic3 from '../fixtures/topic_3.json';
 import topic4 from '../fixtures/topic_4.json';
 import topic5 from '../fixtures/topic_5.json';
 
-export const mockTopic = ({ ...rest } = {}) => ({
+// types
+import type { Topic } from '../types/topic';
+
+export const mockTopic = (props: Partial<Topic> = {}) => ({
   ...topic1,
-  ...rest,
+  ...props,
 });
 
-export const mockTopics = () => {
-  return [topic1, topic2, topic3, topic4, topic5];
+export const mockTopics = (topics: Array<Topic> = []) => {
+  return [topic1, topic2, topic3, topic4, topic5, ...topics];
 };

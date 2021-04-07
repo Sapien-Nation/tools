@@ -2,7 +2,10 @@
   "id": "2",
   "name": "General",
   "channels": [],
+  "squares": [],
   "image": "/fixtures/256x256/bob.png",
-  "notificationNumber": 18,
-  "permissions": { "canAddChannel": false }
+  "permissions": {
+    "canAddChannel": false,
+    "canAddSquare": false
+  }
 }
