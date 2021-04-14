@@ -1,6 +1,7 @@
 {
   "id": "1",
   "email": "slowpoke.rodriguez@warnerbros.com",
-  "username": "Slowpoke Rodriguez",
+  "username": "slowpoke",
+  "displayName": "Slowpoke Rodriguez",
   "avatar": "/fixtures/normal/slowpoke.jpg"
 }
