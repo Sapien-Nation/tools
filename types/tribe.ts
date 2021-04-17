@@ -11,8 +11,11 @@ export type Tribe = {
   id: string;
   name: string;
   image: string;
+  cover?: string;
   squares?: Array<Square>;
   channels?: Array<Channel>;
+  description: string;
+  membersCount: number;
   permissions: Permissions;
 };
 
