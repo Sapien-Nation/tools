@@ -7,7 +7,7 @@ export type Permissions = {
   canAddSquare: boolean;
 };
 
-export type Tribe = {
+export interface Tribe {
   id: string;
   name: string;
   image: string;
@@ -19,4 +19,4 @@ export type Tribe = {
   permissions: Permissions;
 };
 
-export type TribePreview = Tribe;
+export interface TribePreview extends Tribe {};

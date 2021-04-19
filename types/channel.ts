@@ -2,7 +2,7 @@
 import { Badge } from './badge';
 import { Rss } from './rss';
 
-export type Channel = {
+export interface Channel {
   contributorsBadges: Array<Badge>;
   cover: string;
   description: string;

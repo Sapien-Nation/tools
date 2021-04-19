@@ -1,4 +1,4 @@
-export type Square = {
+export interface Square {
   id: string;
   name: string;
   lastUpdateAt: ISOString;
