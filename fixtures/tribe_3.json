@@ -1,9 +1,12 @@
 {
   "id": "3",
   "name": "Settings",
+  "cover": "/fixtures/normal/1920x200.png",
   "channels": [],
+  "description": "",
   "squares": [],
   "image": "/fixtures/256x256/dinner.png",
+  "membersCount": 0,
   "permissions": {
     "canAddChannel": false,
     "canAddSquare": false
