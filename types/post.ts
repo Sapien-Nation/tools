@@ -13,11 +13,17 @@ export interface PostUser {
   displayName: string;
 }
 
+export interface PostChannel {
+  name: string;
+}
+
 export interface Post {
   badges: Array<Badge>;
-  body: RAWHtml
+  body: RAWHtml;
+  channel?: PostChannel;
   createdAt: ISOString;
   id: string;
+  image?: string;
   owner: PostUser;
   topics: Array<string>;
   tribe: PostTribe;
