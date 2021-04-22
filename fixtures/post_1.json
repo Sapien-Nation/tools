@@ -2,6 +2,7 @@
   "badges": [],
   "body": "<h1>Hello</h1>",
   "createdAt": "2021-02-06T03:14:49.943Z",
+  "image": "/fixtures/normal/post-fixture.jpeg",
   "id": "1",
   "owner": {
     "id": "1",
@@ -10,5 +11,6 @@
     "avatar": "/fixtures/normal/slowpoke.jpg"
   },
   "topics": ["sapien"],
-  "tribe": { "id": "1", "name": "Sapien" }
+  "tribe": { "id": "1", "name": "Sapien" },
+  "channel": { "name": "Design" }
 }
