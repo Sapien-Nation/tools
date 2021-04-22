@@ -1,7 +1,13 @@
 {
   "id": "101",
+  "cover": "/fixtures/normal/1920x200.png",
+  "contributorsBadges": [],
+  "description": "description",
+  "rss": [],
   "name": "News",
   "image": "/fixtures/256x256/figure.png",
-  "memberCount": 0,
-  "lastUpdate": "2021-02-06T03:14:49.943Z"
+  "membersCount": 0,
+  "lastUpdateAt": "2021-03-06T03:14:49.943Z",
+  "subscriptionBadges": [],
+  "viewersBadges": []
 }
