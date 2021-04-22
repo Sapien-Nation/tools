@@ -17,6 +17,7 @@ export interface Post {
   badges: Array<Badge>;
   body: RAWHtml
   createdAt: ISOString;
+  id: string;
   owner: PostUser;
   topics: Array<string>;
   tribe: PostTribe;
