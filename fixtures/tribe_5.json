@@ -1,0 +1,15 @@
+{
+  "id": "5",
+  "name": "Beauty of Nature",
+  "cover": "/fixtures/normal/1920x200.png",
+  "channels": [],
+  "description": "",
+  "squares": [],
+  "image": "/fixtures/256x256/battery.png",
+  "membersCount": 0,
+  "permissions": {
+    "canAddChannel": false,
+    "canAddSquare": false
+  },
+  "topics": []
+}
