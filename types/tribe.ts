@@ -17,6 +17,7 @@ export interface Tribe {
   description: string;
   membersCount: number;
   permissions: Permissions;
+  topics: Array<string>;
 };
 
 export interface TribePreview extends Tribe {};

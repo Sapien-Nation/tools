@@ -10,5 +10,6 @@
   "permissions": {
     "canAddChannel": false,
     "canAddSquare": false
-  }
+  },
+  "topics": []
 }
