@@ -25,7 +25,3 @@ export interface Tribe {
   squares: Array<Square>
   permissions: Array<Permissions>;
 }
-
-export interface TribeBar {
-  tribes: Array<Tribe>
-}

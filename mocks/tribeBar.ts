@@ -1,7 +1,7 @@
 // helpers
 import { v4 as uuidv4 } from 'uuid';
 
-import type { Channel, TribeBar, Square, Tribe, TribePermissions } from '../types/tribeBar';
+import type { Channel, Square, Tribe, TribePermissions } from '../types/tribeBar';
 
 export const mockChannel = ({
   id = uuidv4(),
@@ -40,9 +40,4 @@ export const mockTribe = ({
   squares: [],
   permissions: mockPermissions(),
   ...rest,
-});
-
-export const mockTribeBar = (props: Partial<TribeBar> = {}) => ({
-  tribes: [],
-  ...props,
 });
