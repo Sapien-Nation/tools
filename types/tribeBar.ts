@@ -1,4 +1,3 @@
-
 export type TribePermissions = {
   canAddChannel: boolean;
   canAddSquare: boolean;
@@ -19,9 +18,9 @@ export interface Square {
 
 export interface Tribe {
   avatar: string;
-  channels: Array<Channel>
+  channels: Array<Channel>;
   id: string;
   name: string;
-  squares: Array<Square>
-  permissions: Array<Permissions>;
+  squares: Array<Square>;
+  permissions: TribePermissions;
 }
