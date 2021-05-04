@@ -11,5 +11,5 @@ export interface Channel {
 
 export interface ChannelFeed {
   cursor: null | string;
-  posts: Array<Post>;
+  data: Array<Post>;
 }
