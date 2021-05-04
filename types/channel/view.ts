@@ -11,6 +11,5 @@ export interface Channel {
 
 export interface ChannelFeed {
   cursor: null | string;
-  hasMore: boolean;
   posts: Array<Post>;
 }
