@@ -1,3 +1,6 @@
+// types
+import { Media } from './media';
+
 export type TribePermissions = {
   canAddChannel: boolean;
   canAddSquare: boolean;
@@ -17,7 +20,7 @@ export interface Square {
 }
 
 export interface Tribe {
-  avatar: string;
+  avatar: Media;
   channels: Array<Channel>;
   id: string;
   name: string;
