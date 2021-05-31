@@ -1,5 +1,5 @@
 // types
-import type { Post } from '../post';
+import type { Post } from '../content';
 
 export interface Channel {
   avatar: string;
