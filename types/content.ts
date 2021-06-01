@@ -3,6 +3,8 @@ export interface Content {
   data: string;
   createdAt: string;
   type: string;
+  contentGroupType?: string;
+  contentGroupName?: string;
   owner: {
     id: string,
     displayName: string,
