@@ -11,7 +11,7 @@ import type {
 export const mockChannel = ({
   id = uuidv4(),
   ...rest
-}: Partial<Channel> = {}) => ({
+}: Partial<Channel> = {}): Channel => ({
   avatar: '/fixtures/256x256/message.png',
   id,
   lastUpdateAt: '2021-02-06T03:14:49.943Z',
@@ -23,19 +23,19 @@ export const mockChannel = ({
 export const mockSquare = ({
   id = uuidv4(),
   ...rest
-}: Partial<Square> = {}) => ({
+}: Partial<Square> = {}): Square => ({
   id,
   name: `Square ${id}`,
   ...rest,
 });
 
-export const mockPermissions = (props: Partial<TribePermissions> = {}) => ({
+export const mockPermissions = (props: Partial<TribePermissions> = {}): TribePermissions => ({
   canAddChannel: false,
   canAddSquare: false,
   ...props,
 });
 
-export const mockTribe = ({ id = uuidv4(), ...rest }: Partial<Tribe> = {}) => ({
+export const mockTribe = ({ id = uuidv4(), ...rest }: Partial<Tribe> = {}): Tribe => ({
   avatar: '/fixtures/256x256/general.png',
   channels: [],
   id,
