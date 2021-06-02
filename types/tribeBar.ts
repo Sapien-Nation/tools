@@ -20,7 +20,7 @@ export interface Square {
 }
 
 export interface Tribe {
-  avatar: Media;
+  avatar: string;
   channels: Array<Channel>;
   id: string;
   name: string;
