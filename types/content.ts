@@ -1,7 +1,14 @@
-type contentType = 'POST' | 'REPLY';
-type contentGroupType = 'SQUARE' | 'CHANNEL';
+export enum ContentType {
+  Post,
+  Reply
+}
 
-export interface ContentOnwer {
+export enum ContentGroupType {
+  Square,
+  Channel,
+}
+
+export interface ContentOwner {
   avatar: string,
   displayName: string,
   id: string,
@@ -9,25 +16,25 @@ export interface ContentOnwer {
 }
 
 export interface ContentTribe {
-  name: string;
   id: string;
+  name: string;
 }
 
-export interface ContentGroup { // Groups can be Channels or Squares
+export interface ContentGroup {
   id: string;
   name: string;
-  type: contentGroupType;
+  type: ContentGroupType;
 }
 
 export interface Content {
-  group: ContentGroup;
   createdAt: ISOString;
   data: RAWHtml;
+  group: ContentGroup;
   id: string;
-  image?: string; // optional image, maybe not needed on replies preview
-  owner: ContentOnwer;
-  postId?: string, // only for replies, the postId linked to the reply
+  image?: string;
+  owner: ContentOwner;
+  postId?: string,
   topics?: Array<string>;
   tribe: ContentTribe;
-  type: contentType; // post / reply
+  type: ContentType;
 }

@@ -4,13 +4,13 @@ import { v4 as uuidv4 } from 'uuid';
 // types
 import type { Topic, Tribe } from '../types/discover';
 
-export const mockTopic = ({ id = uuidv4(), ...rest }: Partial<Topic> = {}) => ({
+export const mockTopic = ({ id = uuidv4(), ...rest }: Partial<Topic> = {}): Topic => ({
   id,
   name: `Topic ${id}`,
   ...rest
 })
 
-export const mockTribe = (props: Partial<Tribe> = {}) => ({
+export const mockTribe = (props: Partial<Tribe> = {}): Tribe => ({
   avatar: '/fixtures/256x256/general.png',
   cover: '',
   description: '',
