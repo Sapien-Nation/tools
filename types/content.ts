@@ -1,6 +1,6 @@
 export enum ContentType {
   Post,
-  Reply
+  Reply,
 }
 
 export enum ContentGroupType {
@@ -9,10 +9,10 @@ export enum ContentGroupType {
 }
 
 export interface ContentOwner {
-  avatar: string,
-  displayName: string,
-  id: string,
-  userName: string,
+  avatar: string;
+  displayName: string;
+  id: string;
+  userName: string;
 }
 
 export interface ContentTribe {
@@ -33,7 +33,7 @@ export interface Content {
   id: string;
   image?: string;
   owner: ContentOwner;
-  postId?: string,
+  postId?: string;
   topics?: Array<string>;
   tribe: ContentTribe;
   type: ContentType;
