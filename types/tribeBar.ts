@@ -1,5 +1,4 @@
-// types
-import { Media } from './media';
+import type { ISOString } from './common';
 
 export type TribePermissions = {
   canAddChannel: boolean;

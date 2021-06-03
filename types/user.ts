@@ -1,3 +1,5 @@
+import type { ISOString } from './common';
+
 export enum Types {
   User = 'USER'
 }

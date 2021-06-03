@@ -1,3 +1,5 @@
+import type { ISOString, RAWHtml } from './common';
+
 export enum ContentType {
   Post = 'POST',
   Reply = 'REPLY',
