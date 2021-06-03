@@ -1,11 +1,11 @@
 export enum ContentType {
-  Post,
-  Reply,
+  Post = 'POST',
+  Reply = 'REPLY',
 }
 
 export enum ContentGroupType {
-  Square,
-  Channel,
+  Square = 'SQUARE',
+  Channel = 'CHANNEL',
 }
 
 export interface ContentOwner {
