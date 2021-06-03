@@ -27,8 +27,8 @@ export interface ContentGroup {
 }
 
 export interface Content {
-  createdAt: string;
-  data: string;
+  createdAt: ISOString;
+  data: RAWHtml;
   group: ContentGroup;
   id: string;
   image?: string;
