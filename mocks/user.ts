@@ -3,10 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 import { User, Types, Status } from '../types/user';
 
-export const mockUser = ({
-  id = uuidv4(),
-  ...rest
-}: Partial<User> = {}) => ({
+export const mockUser = ({ id = uuidv4(), ...rest }: Partial<User> = {}) => ({
   id,
   type: Types.User,
   username: 'jhondoe',
