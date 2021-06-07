@@ -10,8 +10,10 @@ export const mockChannel = (props: Partial<Channel> = {}): Channel => ({
   ...props,
 });
 
-export const mockChannelFeed = (props: Partial<ChannelFeed> = {}): ChannelFeed => ({
+export const mockChannelFeed = (
+  props: Partial<ChannelFeed> = {},
+): ChannelFeed => ({
   cursor: null,
   data: [],
-  ...props
-})
+  ...props,
+});

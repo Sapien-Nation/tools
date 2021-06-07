@@ -1,3 +1,5 @@
+// types
+import { Square } from './square';
 import type { ISOString } from './common';
 
 export type TribePermissions = {
@@ -10,11 +12,6 @@ export interface Channel {
   id: string;
   lastUpdateAt: ISOString;
   membersCount: number;
-  name: string;
-}
-
-export interface Square {
-  id: string;
   name: string;
 }
 

@@ -2,12 +2,20 @@
 import { v4 as uuidv4 } from 'uuid';
 
 // types
-import type { Content, ContentGroup, ContentOwner, ContentTribe } from '../types/content';
+import type {
+  Content,
+  ContentGroup,
+  ContentOwner,
+  ContentTribe,
+} from '../types/content';
 
 // constants
 import { ContentType, ContentGroupType } from '../types/content';
 
-export const mockContentOwner = ({ id = uuidv4(), ...rest }: Partial<ContentOwner> = {}): ContentOwner => ({
+export const mockContentOwner = ({
+  id = uuidv4(),
+  ...rest
+}: Partial<ContentOwner> = {}): ContentOwner => ({
   avatar: '/fixtures/256x256/general.png',
   displayName: 'John Doe',
   id,
@@ -15,20 +23,29 @@ export const mockContentOwner = ({ id = uuidv4(), ...rest }: Partial<ContentOwne
   ...rest,
 });
 
-export const mockContentTribe = ({ id = uuidv4(), ...rest }: Partial<ContentTribe> = {}): ContentTribe => ({
+export const mockContentTribe = ({
+  id = uuidv4(),
+  ...rest
+}: Partial<ContentTribe> = {}): ContentTribe => ({
   id,
   name: `Tribe ${id}`,
   ...rest,
 });
 
-export const mockContentGroup = ({ id = uuidv4(), ...rest }: Partial<ContentGroup> = {}): ContentGroup => ({
+export const mockContentGroup = ({
+  id = uuidv4(),
+  ...rest
+}: Partial<ContentGroup> = {}): ContentGroup => ({
   id,
   name: `Group ${id}`,
   type: ContentGroupType.Square,
   ...rest,
 });
 
-export const mockContent = ({ id = uuidv4(), ...rest }: Partial<Content> = {}): Content => ({
+export const mockContent = ({
+  id = uuidv4(),
+  ...rest
+}: Partial<Content> = {}): Content => ({
   createdAt: new Date().toISOString(),
   data: '',
   group: mockContentGroup(),
