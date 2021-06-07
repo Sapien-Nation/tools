@@ -1,8 +1,12 @@
 // helpers
 import { v4 as uuidv4 } from 'uuid';
 
-import type { Square } from '../types/square';
-import type { Channel, Tribe, TribePermissions } from '../types/tribeBar';
+import type {
+  Channel,
+  Square,
+  Tribe,
+  TribePermissions,
+} from '../types/tribeBar';
 
 export const mockChannel = ({
   id = uuidv4(),
@@ -35,13 +39,15 @@ export const mockPermissions = (
 
 export const mockTribe = ({
   id = uuidv4(),
+  mainSquareId = uuidv4(),
   ...rest
 }: Partial<Tribe> = {}): Tribe => ({
   avatar: '/fixtures/256x256/general.png',
   channels: [],
   id,
+  mainSquareId,
   name: `Tribe ${id}`,
-  squares: [],
   permissions: mockPermissions(),
+  squares: [],
   ...rest,
 });
