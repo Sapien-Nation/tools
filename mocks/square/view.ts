@@ -1,7 +1,7 @@
 // helpers
 import { v4 as uuidv4 } from 'uuid';
 
-import { Square } from '../types/square';
+import type { Square } from '../../types/square/view';
 
 export const mockSquare = ({
   id = uuidv4(),
@@ -9,5 +9,7 @@ export const mockSquare = ({
 }: Partial<Square> = {}): Square => ({
   id,
   name: `Square ${id}`,
+  description: '',
+  membersCount: 0,
   ...rest,
 });
