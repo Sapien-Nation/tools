@@ -1,7 +1,7 @@
 // helpers
 import { v4 as uuidv4 } from 'uuid';
 
-import type { User, Types, Status } from '../types/user';
+import { User, Types, Status } from '../types/user';
 
 export const mockUser = ({ id = uuidv4(), ...rest }: Partial<User> = {}) => ({
   id,
