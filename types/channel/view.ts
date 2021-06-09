@@ -1,6 +1,3 @@
-// types
-import type { Post } from '../content';
-
 export interface Channel {
   avatar: string;
   cover: string;
@@ -11,5 +8,5 @@ export interface Channel {
 
 export interface ChannelFeed {
   cursor: null | string;
-  data: Array<Post>;
+  data: Array<any>;
 }

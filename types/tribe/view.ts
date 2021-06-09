@@ -3,7 +3,7 @@ export interface Tribe {
   cover: string;
   description: string;
   followersCount: number;
-  identifier: string
+  identifier: string;
   membersCount: number;
   name: string;
 }
