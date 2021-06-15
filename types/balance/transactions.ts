@@ -1,16 +1,39 @@
 // types
-import { User } from '../user';
+import type { ISOString } from '../common';
 
-export interface TransactionType {
+export enum TransactionStatus {
+  Pending = 'pending',
+  Fail = 'fail',
+  Confirmed = 'confirmed',
+}
+
+export enum TransactionType {
+  Deposit = 'deposit',
+  Sell = 'sell',
+  Sent = 'sent',
+  Received = 'received',
+  Purchase = 'purchase',
+  Withdrawal = 'withdrawal',
+}
+
+export interface TransactionUser {
+  avatar: string;
+  displayName: string;
+  email: string;
+  id: string;
+  username: string;
+};
+
+export interface TransactionInfo {
   amount: number;
-  from: null | User;
-  status: 'pending' | 'fail' | 'confirmed';
-  type: 'withdrawal' | 'deposit' | 'sent' | 'received' | 'purchase' | 'sell';
+  from: null | TransactionUser;
+  status: TransactionStatus;
+  type: TransactionType;
 }
 
 export interface Transaction {
-  info: TransactionType;
+  info: TransactionInfo;
   createdAt: ISOString;
   updatedAt: ISOString;
-  user: User;
+  user: TransactionUser;
 }
