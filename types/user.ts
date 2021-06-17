@@ -9,6 +9,7 @@ export enum Status {
 }
 
 export interface User {
+  avatar: string;
   id: string;
   type: Types.User;
   username: string;
