@@ -43,6 +43,7 @@ export const mockTribe = ({
   ...rest
 }: Partial<Tribe> = {}): Tribe => ({
   avatar: '/fixtures/256x256/general.png',
+  avatar_original: '/fixtures/256x256/general.png',
   channels: [],
   id,
   mainSquareId,
