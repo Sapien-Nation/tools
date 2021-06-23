@@ -21,6 +21,7 @@ export interface Square {
 
 export interface Tribe {
   avatar: string;
+  avatar_original: string;
   channels: Array<Channel>;
   id: string;
   mainSquareId: string;
