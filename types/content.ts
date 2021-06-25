@@ -20,6 +20,7 @@ export interface ContentOwner {
 export interface ContentTribe {
   id: string;
   name: string;
+  avatar: string;
 }
 
 export interface ContentGroup {
