@@ -29,3 +29,12 @@ export interface Tribe {
   squares: Array<Square>;
   permissions: TribePermissions;
 }
+
+export interface CreateTibe {
+  avatar: string | null;
+  cover: string | null;
+  description: string;
+  identifier: string;
+  name: string;
+  private: boolean
+}
