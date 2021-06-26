@@ -30,7 +30,7 @@ export interface Tribe {
   permissions: TribePermissions;
 }
 
-export interface CreateTibe {
+export interface CreateTribe {
   avatar: string | null;
   cover: string | null;
   description: string;
