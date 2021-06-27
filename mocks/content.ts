@@ -28,6 +28,7 @@ export const mockContentTribe = ({
   ...rest
 }: Partial<ContentTribe> = {}): ContentTribe => ({
   id,
+  avatar: '/fixtures/256x256/general.png',
   name: `Tribe ${id}`,
   ...rest,
 });
