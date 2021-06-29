@@ -30,8 +30,11 @@ export interface ContentGroup {
 }
 
 export interface Content {
+  canEdit: boolean;
+  canDelete: boolean;
   createdAt: ISOString;
   data: RAWHtml;
+  deletedAt: ISOString | null;
   group: ContentGroup;
   id: string;
   image?: string;

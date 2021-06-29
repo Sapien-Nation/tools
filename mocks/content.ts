@@ -47,8 +47,11 @@ export const mockContent = ({
   id = uuidv4(),
   ...rest
 }: Partial<Content> = {}): Content => ({
+  canEdit: false,
+  canDelete: false,
   createdAt: new Date().toISOString(),
   data: '',
+  deletedAt: null,
   group: mockContentGroup(),
   id,
   image: '/fixtures/256x256/general.png',
