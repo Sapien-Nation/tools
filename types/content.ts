@@ -40,6 +40,7 @@ export interface Content {
   image?: string;
   owner: ContentOwner;
   postId?: string;
+  preview: string;
   topics?: Array<string>;
   tribe: ContentTribe;
   type: ContentType;
