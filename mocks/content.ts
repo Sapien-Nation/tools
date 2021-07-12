@@ -57,6 +57,7 @@ export const mockContent = ({
   image: '/fixtures/256x256/general.png',
   owner: mockContentOwner(),
   postId: '',
+  preview: '',
   topics: [],
   tribe: mockContentTribe(),
   type: ContentType.Post,
