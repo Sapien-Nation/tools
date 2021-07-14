@@ -2,10 +2,10 @@
 import { v4 as uuidv4 } from 'uuid';
 
 // type
-import type { Transaction, TransactionInfo, TransactionUser } from '../../types/balance/transactions';
+import type { Transaction, TransactionInfo, TransactionUser } from '../../types/wallet/transactions';
 
 // constants
-import { TransactionStatus, TransactionType } from '../../types/balance/transactions';
+import { TransactionStatus, TransactionType } from '../../types/wallet/transactions';
 
 export const mockTransactionUser = ({ id = uuidv4(), ...rest } : Partial<TransactionUser> = {}): TransactionUser => ({
   id: "1",

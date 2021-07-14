@@ -22,7 +22,7 @@ export interface TransactionUser {
   email: string;
   id: string;
   username: string;
-};
+}
 
 export interface TransactionInfo {
   amount: number;
