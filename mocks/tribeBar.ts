@@ -46,6 +46,7 @@ export const mockTribe = ({
   avatar_original: '/fixtures/256x256/general.png',
   channels: [],
   id,
+  isMain: false,
   mainSquareId,
   name: `Tribe ${id}`,
   permissions: mockPermissions(),

@@ -28,6 +28,7 @@ export interface Tribe {
   name: string;
   squares: Array<Square>;
   permissions: TribePermissions;
+  isMain: boolean;
 }
 
 export interface CreateTribe {
