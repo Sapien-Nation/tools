@@ -36,5 +36,5 @@ export interface CreateTribe {
   description: string;
   identifier: string;
   name: string;
-  private: boolean
+  private: boolean;
 }
