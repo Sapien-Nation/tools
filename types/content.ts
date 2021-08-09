@@ -10,7 +10,7 @@ export enum ContentGroupType {
   Channel = 'CHANNEL',
 }
 
-export interface ContentOwner {
+export interface ContentAuthor {
   avatar: string;
   displayName: string;
   id: string;
@@ -20,7 +20,6 @@ export interface ContentOwner {
 export interface ContentTribe {
   id: string;
   name: string;
-  avatar: string;
 }
 
 export interface ContentGroup {
@@ -30,17 +29,16 @@ export interface ContentGroup {
 }
 
 export interface Content {
+  author: ContentAuthor;
+  body: RAWHtml;
   canEdit: boolean;
   canDelete: boolean;
   createdAt: ISOString;
-  data: RAWHtml;
   deletedAt: ISOString | null;
   group: ContentGroup;
   id: string;
-  image?: string;
-  owner: ContentOwner;
+  imagePreview: string | null;
   postId?: string;
-  preview: string;
   topics?: Array<string>;
   tribe: ContentTribe;
   type: ContentType;

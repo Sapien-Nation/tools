@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 import type {
   Content,
   ContentGroup,
-  ContentOwner,
+  ContentAuthor,
   ContentTribe,
 } from '../types/content';
 
@@ -15,7 +15,7 @@ import { ContentType, ContentGroupType } from '../types/content';
 export const mockContentOwner = ({
   id = uuidv4(),
   ...rest
-}: Partial<ContentOwner> = {}): ContentOwner => ({
+}: Partial<ContentAuthor> = {}): ContentAuthor => ({
   avatar: '/fixtures/256x256/general.png',
   displayName: 'John Doe',
   id,
@@ -28,7 +28,6 @@ export const mockContentTribe = ({
   ...rest
 }: Partial<ContentTribe> = {}): ContentTribe => ({
   id,
-  avatar: '/fixtures/256x256/general.png',
   name: `Tribe ${id}`,
   ...rest,
 });
@@ -47,17 +46,16 @@ export const mockContent = ({
   id = uuidv4(),
   ...rest
 }: Partial<Content> = {}): Content => ({
+  author: mockContentOwner(),
+  body: '',
   canEdit: false,
   canDelete: false,
   createdAt: new Date().toISOString(),
-  data: '',
   deletedAt: null,
   group: mockContentGroup(),
   id,
-  image: '/fixtures/256x256/general.png',
-  owner: mockContentOwner(),
+  imagePreview: '/fixtures/256x256/general.png',
   postId: '',
-  preview: '',
   topics: [],
   tribe: mockContentTribe(),
   type: ContentType.Post,
