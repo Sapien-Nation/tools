@@ -2,6 +2,6 @@ export interface CreatorWidget {
   avatar: string;
   displayName: string;
   id: string;
-  userName: string;
+  username: string;
   postCount: number;
 }
