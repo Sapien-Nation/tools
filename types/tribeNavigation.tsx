@@ -8,7 +8,11 @@ export interface Channel {
   name: string;
 }
 
-export interface ChannelFeed {
-  cursor: null | string;
-  data: Array<any>;
+export interface CreateChannel {
+  avatar: string | null;
+  cover: string | null;
+  description: string;
+  identifier: string;
+  name: string;
+  private: boolean;
 }
