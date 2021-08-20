@@ -12,5 +12,5 @@ export interface Wallet {
     ownerId,
     parentBadgeId,
     totalPrice: number,
-  ) => void;
+  ) => Promise<void>;
 }
