@@ -1,4 +1,5 @@
 export interface Wallet {
+  balance: string;
   getBalance: () => void;
   transferSPN: (
     fromUserId: string,
