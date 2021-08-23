@@ -2,29 +2,27 @@
 import type { ISOString } from '../common';
 
 export enum TransactionStatus {
-  Pending = 'pending',
-  Fail = 'fail',
-  Confirmed = 'confirmed',
+  P = 'pending',
+  F = 'fail',
+  A = 'confirmed',
 }
 
 export enum TransactionType {
-  Deposit = 'deposit',
-  Sell = 'sell',
-  Sent = 'sent',
-  Received = 'received',
-  Purchase = 'purchase',
-  Withdrawal = 'withdrawal',
+  DEPOSIT_SPN = 'deposit',
+  SELL_BADGE = 'sell',
+  SEND_SPN = 'sent',
+  RECEIVE_SPN = 'received',
+  PURCHASE_BADGE = 'purchase',
+  WITHDRAW_SPN = 'withdrawal',
 }
 
 export interface TransactionUser {
   avatar: string;
   displayName: string;
-  email: string;
   id: string;
-  username: string;
 }
 
-export interface TransactionInfo {
+/* export interface TransactionInfo {
   amount: number;
   from: null | TransactionUser;
   status: TransactionStatus;
@@ -36,4 +34,13 @@ export interface Transaction {
   createdAt: ISOString;
   updatedAt: ISOString;
   user: TransactionUser;
+} */
+
+export interface Transaction {
+  amount: number;
+  createdAt: ISOString;
+  status: TransactionStatus;
+  user?: TransactionUser;
+  txHash: string;
+  type: TransactionType;
 }
