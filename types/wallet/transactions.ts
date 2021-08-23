@@ -20,21 +20,23 @@ export interface TransactionUser {
   avatar: string;
   displayName: string;
   id: string;
+  email?: string;
+  username?: string;
 }
 
-/* export interface TransactionInfo {
+export interface TransactionInfo {
   amount: number;
   from: null | TransactionUser;
   status: TransactionStatus;
   type: TransactionType;
 }
 
-export interface Transaction {
-  info: TransactionInfo;
-  createdAt: ISOString;
-  updatedAt: ISOString;
-  user: TransactionUser;
-} */
+// export interface Transaction {
+//   info: TransactionInfo;
+//   createdAt: ISOString;
+//   updatedAt: ISOString;
+//   user: TransactionUser;
+// }
 
 export interface Transaction {
   amount: number;

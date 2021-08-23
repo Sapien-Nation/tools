@@ -2,13 +2,23 @@
 import { v4 as uuidv4 } from 'uuid';
 
 // type
-import type { Transaction, TransactionInfo, TransactionUser } from '../../types/wallet/transactions';
+import type {
+  Transaction,
+  TransactionInfo,
+  TransactionUser,
+} from '../../types/wallet/transactions';
 
 // constants
-import { TransactionStatus, TransactionType } from '../../types/wallet/transactions';
+import {
+  TransactionStatus,
+  TransactionType,
+} from '../../types/wallet/transactions';
 
-export const mockTransactionUser = ({ id = uuidv4(), ...rest } : Partial<TransactionUser> = {}): TransactionUser => ({
-  id: "1",
+export const mockTransactionUser = ({
+  id = uuidv4(),
+  ...rest
+}: Partial<TransactionUser> = {}): TransactionUser => ({
+  id: '1',
   avatar: '/fixtures/256x256/message.png',
   displayName: 'Jhon Doe',
   email: 'jhondoe@gmail.com',
@@ -16,15 +26,20 @@ export const mockTransactionUser = ({ id = uuidv4(), ...rest } : Partial<Transac
   ...rest,
 });
 
-export const mockTransactionInfo = (props: Partial<TransactionInfo> = {}): TransactionInfo => ({
+export const mockTransactionInfo = (
+  props: Partial<TransactionInfo> = {},
+): TransactionInfo => ({
   amount: 100,
   from: null,
-  status: TransactionStatus.Pending,
-  type: TransactionType.Deposit,
+  status: TransactionStatus.P,
+  type: TransactionType.DEPOSIT_SPN,
   ...props,
 });
 
-export const mockTransaction = (props: Partial<Transaction> = {}): Transaction => ({
+export const mockTransaction = (
+  props: Partial<Transaction> = {},
+): Transaction => ({
+  // @ts-ignore
   info: mockTransactionInfo(),
   createdAt: new Date().toISOString(),
   updatedAt: new Date().toISOString(),
