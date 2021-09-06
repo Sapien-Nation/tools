@@ -21,5 +21,6 @@ export interface Wallet {
     badgeId: string,
     badgeBlockchainId: number,
     userIsAdmin: boolean,
+    contentId?: string,
   ) => Promise<void>;
 }
