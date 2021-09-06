@@ -13,4 +13,13 @@ export interface Wallet {
     parentBadgeId,
     totalPrice: number,
   ) => Promise<void>;
+  transferBadge: (
+    fromUserId: string,
+    toUserId: string,
+    toAddress: string,
+    amount: number,
+    badgeId: string,
+    badgeBlockchainId: number,
+    userIsAdmin: boolean,
+  ) => Promise<void>;
 }
