@@ -15,6 +15,7 @@ export interface ContentAuthor {
   displayName: string;
   id: string;
   userName: string;
+  walletAddress: string | null;
 }
 
 export interface ContentTribe {
