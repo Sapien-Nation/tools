@@ -5,6 +5,7 @@ export interface Wallet {
     toUserId: string,
     toAddress: string,
     spnAmount: number,
+    contentId?: string,
   ) => void;
   purchaseBadge: (
     amount: number,
