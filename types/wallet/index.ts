@@ -13,6 +13,7 @@ export interface Wallet {
     ownerId,
     parentBadgeId,
     totalPrice: number,
+    isJoiningTribe?: boolean,
   ) => Promise<void>;
   transferBadge: (
     fromUserId: string,
