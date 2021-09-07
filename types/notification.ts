@@ -30,13 +30,29 @@ export type EventBase = {
 };
 
 export type EventData = EventBase & {
+  type: string;
   payload: string;
   extra?: any;
   link: string;
   insertedAt: string;
 };
 
-export interface UserNotificationResult {
+export type UserEventData = EventBase & {
+  id: string;
+  avatar: string;
+  type: string;
+  payload: string;
+  extra?: any;
+  link: string;
+  insertedAt: string;
+};
+
+export interface NotificationWebSocket {
   type: EventType;
   data: EventData;
+}
+
+export interface UserNotificationResult {
+  count: number;
+  notifications: Array<UserEventData>;
 }
