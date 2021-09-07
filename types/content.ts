@@ -18,6 +18,12 @@ export interface ContentAuthor {
   walletAddress: string | null;
 }
 
+export interface ContentBadge {
+  id: string;
+  name: string;
+  avatar: string | null;
+}
+
 export interface ContentTribe {
   id: string;
   name: string;
@@ -31,6 +37,7 @@ export interface ContentGroup {
 
 export interface Content {
   author: ContentAuthor;
+  badges: Array<ContentBadge>;
   body: RAWHtml;
   canEdit: boolean;
   canDelete: boolean;

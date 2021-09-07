@@ -48,6 +48,7 @@ export const mockContent = ({
   ...rest
 }: Partial<Content> = {}): Content => ({
   author: mockContentOwner(),
+  badges: [],
   body: '',
   canEdit: false,
   canDelete: false,
