@@ -5,6 +5,7 @@ export interface Wallet {
     toUserId: string,
     toAddress: string,
     spnAmount: number,
+    contentId?: string,
   ) => void;
   purchaseBadge: (
     amount: number,
@@ -12,6 +13,7 @@ export interface Wallet {
     ownerId,
     parentBadgeId,
     totalPrice: number,
+    isJoiningTribe?: boolean,
   ) => Promise<void>;
   transferBadge: (
     fromUserId: string,
@@ -21,5 +23,6 @@ export interface Wallet {
     badgeId: string,
     badgeBlockchainId: number,
     userIsAdmin: boolean,
+    contentId?: string,
   ) => Promise<void>;
 }

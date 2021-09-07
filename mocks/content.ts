@@ -20,6 +20,7 @@ export const mockContentOwner = ({
   displayName: 'John Doe',
   id,
   userName: 'johndoe',
+  walletAddress: '',
   ...rest,
 });
 
