@@ -47,6 +47,7 @@ export interface Content {
   id: string;
   imagePreview: string | null;
   postId?: string;
+  spn: number;
   topics?: Array<string>;
   tribe: ContentTribe;
   type: ContentType;
