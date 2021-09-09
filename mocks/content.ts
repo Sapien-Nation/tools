@@ -61,5 +61,6 @@ export const mockContent = ({
   topics: [],
   tribe: mockContentTribe(),
   type: ContentType.Post,
+  spn: 0,
   ...rest,
 });
