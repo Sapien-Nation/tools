@@ -11,7 +11,8 @@ export enum TransactionType {
   DEPOSIT_SPN = 'deposit',
   SELL_BADGE = 'sell',
   SEND_SPN = 'sent',
-  RECEIVE_SPN = 'received',
+  RECEIVE_SPN = 'spn received',
+  RECEIVE_BADGE = 'badge received',
   PURCHASE_BADGE = 'purchase',
   WITHDRAW_SPN = 'withdrawal',
 }
