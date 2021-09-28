@@ -34,6 +34,7 @@ export const mockPermissions = (
 ): TribePermissions => ({
   canAddChannel: false,
   canAddSquare: false,
+  canDeleteTribe: false,
   ...props,
 });
 
