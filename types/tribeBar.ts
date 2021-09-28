@@ -4,6 +4,7 @@ import type { ISOString } from './common';
 export type TribePermissions = {
   canAddChannel: boolean;
   canAddSquare: boolean;
+  canDeleteTribe: boolean;
 };
 
 export interface Channel {
