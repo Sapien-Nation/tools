@@ -1,5 +1,5 @@
 // helpers
-import uuid from '../utils/uuidGenerator';
+import { v4 as uuidv4 } from 'uuid';
 
 // types
 import type {
@@ -13,7 +13,7 @@ import type {
 import { ContentType, ContentGroupType } from '../types/content';
 
 export const mockContentOwner = ({
-  id = uuid(),
+  id = uuidv4(),
   ...rest
 }: Partial<ContentAuthor> = {}): ContentAuthor => ({
   avatar: '/fixtures/256x256/general.png',
@@ -25,7 +25,7 @@ export const mockContentOwner = ({
 });
 
 export const mockContentTribe = ({
-  id = uuid(),
+  id = uuidv4(),
   ...rest
 }: Partial<ContentTribe> = {}): ContentTribe => ({
   id,
@@ -34,7 +34,7 @@ export const mockContentTribe = ({
 });
 
 export const mockContentGroup = ({
-  id = uuid(),
+  id = uuidv4(),
   ...rest
 }: Partial<ContentGroup> = {}): ContentGroup => ({
   id,
@@ -44,7 +44,7 @@ export const mockContentGroup = ({
 });
 
 export const mockContent = ({
-  id = uuid(),
+  id = uuidv4(),
   ...rest
 }: Partial<Content> = {}): Content => ({
   author: mockContentOwner(),

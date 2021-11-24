@@ -1,5 +1,5 @@
 // helpers
-import uuid from '../../utils/uuidGenerator';
+import { v4 as uuidv4 } from 'uuid';
 
 // type
 import type {
@@ -15,7 +15,7 @@ import {
 } from '../../types/wallet/transactions';
 
 export const mockTransactionUser = ({
-  id = uuid(),
+  id = uuidv4(),
   ...rest
 }: Partial<TransactionUser> = {}): TransactionUser => ({
   id: '1',
