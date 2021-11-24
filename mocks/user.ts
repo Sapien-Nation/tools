@@ -1,9 +1,9 @@
 // helpers
-import { v4 as uuidv4 } from 'uuid';
+import uuid from '../utils/uuidGenerator';
 
 import { User, Types, Status } from '../types/user';
 
-export const mockUser = ({ id = uuidv4(), ...rest }: Partial<User> = {}) => ({
+export const mockUser = ({ id = uuid(), ...rest }: Partial<User> = {}) => ({
   avatar: '/fixtures/256x256/message.png',
   id,
   type: Types.User,
