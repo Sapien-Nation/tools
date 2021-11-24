@@ -1,11 +1,11 @@
 // helpers
-import { v4 as uuidv4 } from 'uuid';
+import uuid from '../utils/uuidGenerator';
 
 // types
 import type { Topic, Tribe } from '../types/discover';
 
 export const mockTopic = ({
-  id = uuidv4(),
+  id = uuid(),
   ...rest
 }: Partial<Topic> = {}): Topic => ({
   id,
