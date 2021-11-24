@@ -1,5 +1,5 @@
 // helpers
-import uuid from '../utils/uuidGenerator';
+import { v4 as uuidv4 } from 'uuid';
 
 import type {
   Channel,
@@ -9,7 +9,7 @@ import type {
 } from '../types/tribeBar';
 
 export const mockChannel = ({
-  id = uuid(),
+  id = uuidv4(),
   ...rest
 }: Partial<Channel> = {}): Channel => ({
   avatar: '/fixtures/256x256/message.png',
@@ -21,7 +21,7 @@ export const mockChannel = ({
 });
 
 export const mockSquare = ({
-  id = uuid(),
+  id = uuidv4(),
   ...rest
 }: Partial<Square> = {}): Square => ({
   id,
@@ -39,8 +39,8 @@ export const mockPermissions = (
 });
 
 export const mockTribe = ({
-  id = uuid(),
-  mainSquareId = uuid(),
+  id = uuidv4(),
+  mainSquareId = uuidv4(),
   ...rest
 }: Partial<Tribe> = {}): Tribe => ({
   avatar: '/fixtures/256x256/general.png',

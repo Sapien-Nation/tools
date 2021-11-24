@@ -1,4 +1,4 @@
-import uuid from '../../utils/uuidGenerator';
+import { v4 as uuidv4 } from 'uuid';
 
 import type { Tribe } from '../../types/tribe/view';
 
@@ -14,11 +14,11 @@ export const mockTribeMedia = (props: Partial<Tribe> = {}): Tribe => ({
   membersCount: 0,
   memberBadge: {
     avatar: '/fixtures/256x256/message.png',
-    id: uuid(),
+    id: uuidv4(),
     price: 0,
-    blockchainId: uuid(),
+    blockchainId: uuidv4(),
     name: 'Sapien badge',
-    parentBadgeId: uuid(),
+    parentBadgeId: uuidv4(),
   },
   name: 'Sapien',
   role: null,
