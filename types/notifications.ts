@@ -20,15 +20,11 @@ export enum NotificationType {
   WithdrawSPN = 'token.withdraw_spn',
 }
 
-export interface NotificationReceiverUser {
+export interface NotificationReceiver {
   id: string;
+  name?: string;
   seen: boolean;
   username: string;
-}
-
-export interface NotificationReceiverTribe {
-  id: string;
-  name: string;
 }
 
 export interface NotificationSender {
@@ -43,7 +39,7 @@ export interface Notification {
   tribeId: string;
   type: NotificationType;
   link: string;
-  to: NotificationReceiverUser | NotificationReceiverTribe;
+  to: NotificationReceiver;
   by: NotificationSender;
   insertedAt: ISOString;
 }
