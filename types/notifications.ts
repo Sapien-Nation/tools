@@ -34,6 +34,7 @@ export interface NotificationSender {
 export interface Notification {
   id: string;
   payload: string;
+  tribeID: string;
   type: NotificationType;
   link: string;
   to: NotificationReceiver;
