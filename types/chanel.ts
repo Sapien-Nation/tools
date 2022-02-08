@@ -2,19 +2,19 @@
 import type { Media } from './common';
 import type { MemberBadge } from './wallet/badge';
 
-export interface Square {
+export interface Channel {
   description: string;
   id: string;
   membersCount: number;
   name: string;
 }
 
-export interface MainSquarePermissions {
+export interface MainChannelPermissions {
   canEdit: boolean;
   canDelete: boolean;
 }
 
-export interface MainSquare {
+export interface MainChannel {
   avatar: Media;
   avatar_original: Media;
   cover: Media;
@@ -28,6 +28,6 @@ export interface MainSquare {
   memberBadge: MemberBadge;
   name: string;
   membersCount: number;
-  permissions: MainSquarePermissions;
+  permissions: MainChannelPermissions;
   private: boolean;
 }

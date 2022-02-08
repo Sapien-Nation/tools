@@ -27,6 +27,6 @@ export interface ProfileTribe {
   channels: Array<ProfileTribeChannel>;
   isMain: boolean;
   mainSquareId: string;
-  squares: Array<ProfileTribeSquare>;
+  mainChannelId: string;
   permissions: ProfileTribePermissions;
 }
