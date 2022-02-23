@@ -30,3 +30,8 @@ export interface ProfileTribe {
   mainChannelId: string;
   permissions: ProfileTribePermissions;
 }
+
+export interface MainFeedTribe {
+  cover: Media;
+  cover_original: Media;
+}
