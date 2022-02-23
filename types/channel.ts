@@ -14,7 +14,7 @@ export interface MainChannelPermissions {
   canDelete: boolean;
 }
 
-export interface MainChannel {
+export interface HomeFeed {
   avatar: Media;
   avatar_original: Media;
   cover: Media;
