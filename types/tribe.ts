@@ -1,5 +1,9 @@
+// constants
+import { Role } from '../constants/tribe';
+
 // types
-import { ISOString, Media } from './common';
+import type { ISOString, Media } from './common';
+import type { MemberBadge } from './wallet/badge';
 
 export interface ProfileTribeChannel {
   id: string;
@@ -32,6 +36,16 @@ export interface ProfileTribe {
 }
 
 export interface MainFeedTribe {
+  avatar: Media;
+  avatar_original: Media;
   cover: Media;
   cover_original: Media;
+  description: string;
+  followersCount: number;
+  identifier: string;
+  isMember: boolean;
+  memberBadge: MemberBadge;
+  membersCount: number;
+  name: string;
+  role: Role;
 }
