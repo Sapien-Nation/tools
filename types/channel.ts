@@ -3,6 +3,8 @@ import type { Media } from './common';
 import type { MemberBadge } from './wallet/badge';
 
 export interface Channel {
+  avatar: string;
+  cover: string;
   description: string;
   id: string;
   membersCount: number;
