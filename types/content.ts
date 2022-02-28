@@ -38,7 +38,7 @@ export interface ContentBadge {
 
 export interface Content {
   id: string;
-  body: string;
+  body: any;
   createdAt: ISOString;
   deletedAt: ISOString | null;
   canEdit: boolean;
