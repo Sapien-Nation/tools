@@ -23,6 +23,11 @@ export interface ProfileTribePermissions {
   canAddSquare: boolean;
 }
 
+export interface ProfileTribeRoom {
+  id: string;
+  name: string;
+}
+
 export interface ProfileTribe {
   id: string;
   name: string;
@@ -30,6 +35,7 @@ export interface ProfileTribe {
   avatar_original: Media;
   channels: Array<ProfileTribeChannel>;
   isMain: boolean;
+  rooms: Array<ProfileTribeRoom>;
   mainSquareId: string;
   mainChannelId: string;
   permissions: ProfileTribePermissions;
