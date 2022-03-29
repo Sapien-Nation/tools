@@ -23,21 +23,23 @@ export interface ProfileTribePermissions {
   canAddSquare: boolean;
 }
 
+export interface RoomTopic {
+  id: string;
+  name: string;
+}
+
 export interface ProfileTribeRoom {
   id: string;
   name: string;
+  topics: Array<RoomTopic>;
 }
 
 export interface ProfileTribe {
   id: string;
   name: string;
   avatar: Media;
-  avatar_original: Media;
   channels: Array<ProfileTribeChannel>;
-  isMain: boolean;
   rooms: Array<ProfileTribeRoom>;
-  mainSquareId: string;
-  mainChannelId: string;
   permissions: ProfileTribePermissions;
 }
 

@@ -4,6 +4,7 @@ import type {
   ProfileTribeChannel,
   ProfileTribePermissions,
   ProfileTribeRoom,
+  RoomTopic,
 } from '../types/tribe';
 
 export const mockTribePermissions = (
@@ -26,12 +27,22 @@ export const mockProfileTribeChannel = ({
   ...rest,
 });
 
+export const mockRoomTopic = ({
+  id = '1',
+  ...rest
+}: Partial<RoomTopic> = {}): RoomTopic => ({
+  id,
+  name: `Topic ${id}`,
+  ...rest,
+});
+
 export const mockProfileTribeRoom = ({
   id = '1000',
   ...rest
 }: Partial<ProfileTribeRoom> = {}): ProfileTribeRoom => ({
   id,
   name: `Room ${id}`,
+  topics: [],
   ...rest,
 });
 
@@ -42,12 +53,8 @@ export const mockProfileTribe = ({
   id,
   name: `Test Tribe ${id}`,
   avatar: null,
-  avatar_original: null,
   channels: [],
   rooms: [],
-  isMain: false,
-  mainSquareId: '1000',
-  mainChannelId: '1000',
   permissions: mockTribePermissions(),
   ...rest,
 });
