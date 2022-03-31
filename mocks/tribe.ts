@@ -1,5 +1,6 @@
 // types
 import type {
+  DiscoveryTribe,
   ProfileTribe,
   ProfileTribeChannel,
   ProfileTribePermissions,
@@ -56,5 +57,20 @@ export const mockProfileTribe = ({
   channels: [],
   rooms: [],
   permissions: mockTribePermissions(),
+  ...rest,
+});
+
+export const mockDiscoveryTribe = ({
+  id = '1000',
+  ...rest
+}: Partial<DiscoveryTribe> = {}): DiscoveryTribe => ({
+  id,
+  name: `Tribe ${id}`,
+  avatar: null,
+  avatar_original: null,
+  cover: null,
+  cover_original: null,
+  description: '',
+  membersCount: 0,
   ...rest,
 });

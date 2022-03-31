@@ -57,3 +57,14 @@ export interface MainFeedTribe {
   name: string;
   role: Role;
 }
+
+export interface DiscoveryTribe {
+  id: string;
+  avatar: Media;
+  avatar_original: Media;
+  cover: Media;
+  cover_original: Media;
+  description: string;
+  name: string;
+  membersCount: number;
+}
