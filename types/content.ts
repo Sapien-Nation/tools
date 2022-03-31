@@ -1,55 +1,28 @@
+// constants
+import { ContentType } from '../constants/content';
+
 // types
 import type { ISOString, Media } from './common';
 
-export enum ContentType {
-  POST = 'POST',
-}
-
-export enum GroupType {
-  SQUARE = 'SQUARE',
-}
-
-export interface Topic {
-  id: string;
-}
-
-export interface ContentGroup {
+export interface GroupContent {
   id: string;
   name: string;
-  type: GroupType;
+  avatar: Media | null;
 }
 
-export interface ContentAuthor {
+export interface ContentOwner {
   id: string;
   displayName: string;
   userName: string;
   avatar: Media | null;
-  walletAddress: null;
-}
-
-export interface ContentTribe {
-  id: string;
-  name: string;
-}
-
-export interface ContentBadge {
-  id: string;
 }
 
 export interface Content {
   id: string;
-  body: any;
+  body: string;
+  group: GroupContent;
   createdAt: ISOString;
-  deletedAt: ISOString | null;
-  canEdit: boolean;
-  canDelete: boolean;
   type: ContentType;
-  postId: string;
-  topics: Array<Topic>;
-  group: ContentGroup;
-  author: ContentAuthor;
-  tribe: ContentTribe;
+  owner: ContentOwner;
   imagePreview: Media | null;
-  badges: Array<ContentBadge>;
-  spn: number;
 }
