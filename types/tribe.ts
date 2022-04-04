@@ -68,3 +68,11 @@ export interface DiscoveryTribe {
   name: string;
   membersCount: number;
 }
+
+export interface TribeInvite {
+  id: string;
+  avatar: Media | null;
+  name: string;
+  ownerName: string;
+  membersCount: number;
+}
