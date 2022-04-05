@@ -41,6 +41,7 @@ export interface ProfileTribe {
   channels: Array<ProfileTribeChannel>;
   rooms: Array<ProfileTribeRoom>;
   permissions: ProfileTribePermissions;
+  role: Role;
 }
 
 export interface MainFeedTribe {

@@ -1,3 +1,6 @@
+// constants
+import { Role } from '../constants/tribe';
+
 // types
 import type {
   DiscoveryTribe,
@@ -58,6 +61,7 @@ export const mockProfileTribe = ({
   channels: [],
   rooms: [],
   permissions: mockTribePermissions(),
+  role: Role.Member,
   ...rest,
 });
 
