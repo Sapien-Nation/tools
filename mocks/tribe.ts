@@ -6,6 +6,7 @@ import type {
   ProfileTribePermissions,
   ProfileTribeRoom,
   RoomTopic,
+  TribeInvite,
 } from '../types/tribe';
 
 export const mockTribePermissions = (
@@ -71,6 +72,18 @@ export const mockDiscoveryTribe = ({
   cover: null,
   cover_original: null,
   description: '',
+  membersCount: 0,
+  ...rest,
+});
+
+export const mockTribeInvite = ({
+  id = '1000',
+  ...rest
+}: Partial<TribeInvite> = {}): TribeInvite => ({
+  id,
+  avatar: null,
+  name: `Tribe ${id}`,
+  ownerName: 'Jhon Doe',
   membersCount: 0,
   ...rest,
 });
