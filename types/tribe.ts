@@ -39,6 +39,7 @@ export interface ProfileTribe {
   name: string;
   avatar: Media;
   channels: Array<ProfileTribeChannel>;
+  isMain: boolean;
   rooms: Array<ProfileTribeRoom>;
   permissions: ProfileTribePermissions;
   role: Role;

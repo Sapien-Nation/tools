@@ -59,6 +59,7 @@ export const mockProfileTribe = ({
   name: `Test Tribe ${id}`,
   avatar: null,
   channels: [],
+  isMain: false,
   rooms: [],
   permissions: mockTribePermissions(),
   role: Role.Member,
