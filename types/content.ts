@@ -1,5 +1,5 @@
 // constants
-import { ContentType } from '../constants/content';
+import { ContentMimeType, ContentType } from '../constants/content';
 
 // types
 import type { ISOString, Media } from './common';
@@ -18,6 +18,7 @@ export interface ContentOwner {
 }
 
 export interface Content {
+  mimeType: ContentMimeType;
   id: string;
   body: string;
   group: GroupContent;
