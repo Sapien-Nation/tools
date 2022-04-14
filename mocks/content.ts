@@ -1,5 +1,5 @@
 // constants
-import { ContentType } from '../constants/content';
+import { ContentMimeType, ContentType } from '../constants/content';
 
 // types
 import type { Content, ContentOwner, GroupContent } from '../types/content';
@@ -31,4 +31,5 @@ export const mockContent = ({
   type: ContentType.POST,
   owner: mockContentOwner(),
   imagePreview: null,
+  mimeType: ContentMimeType.Html,
 });
