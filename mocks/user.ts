@@ -20,6 +20,7 @@ export const mockUser = ({
   email: 'jhon@test.com',
   createdAt: new Date().toISOString(),
   updatedAt: new Date().toISOString(),
+  walletAddress: '0xb794f5ea0ba39494ce839613fffba74279579268',
   ...rest,
 });
 

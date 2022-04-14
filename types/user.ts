@@ -18,6 +18,7 @@ export interface User {
   createdAt: ISOString;
   updatedAt: ISOString;
   v2Id?: string;
+  walletAddress: string;
 }
 
 export interface PublicProfile {
