@@ -1,12 +1,8 @@
+// constants
+import { Types, Status } from '../constants/user';
+
+// types
 import type { ISOString } from './common';
-
-export enum Types {
-  User = 'USER',
-}
-
-export enum Status {
-  A,
-}
 
 export interface User {
   avatar: string;
