@@ -31,6 +31,7 @@ export interface RoomTopic {
 export interface ProfileTribeRoom {
   id: string;
   name: string;
+  createdAt: ISOString;
   topics: Array<RoomTopic>;
 }
 
