@@ -19,3 +19,10 @@ export interface User {
   updatedAt: ISOString;
   v2Id?: string;
 }
+
+export interface PublicProfile {
+  avatar: string;
+  id: string;
+  bio: string;
+  displayName: string;
+}

@@ -2,7 +2,7 @@
 import { Types as UserTypes, Status as UserStatus } from '../constants/user';
 
 // types
-import type { User } from '../types/user';
+import type { PublicProfile, User } from '../types/user';
 
 export const mockUser = ({
   id = '1000',
@@ -20,5 +20,16 @@ export const mockUser = ({
   email: 'jhon@test.com',
   createdAt: new Date().toISOString(),
   updatedAt: new Date().toISOString(),
+  ...rest,
+});
+
+export const mockPublicPofile = ({
+  id = '1000',
+  ...rest
+}: Partial<PublicProfile> = {}): PublicProfile => ({
+  avatar: '',
+  id,
+  bio: '',
+  displayName: 'Jhon Doe',
   ...rest,
 });
