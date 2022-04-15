@@ -1,3 +1,6 @@
+// constants
+import { MessageType } from '../constants/rooms';
+
 // types
 import type {
   RoomDetail,
@@ -48,8 +51,7 @@ export const mockRoomMessage = ({
   id,
   content: '',
   createdAt: new Date().toISOString(),
-  isOptimistic: false,
-  type: '',
+  type: MessageType.Text,
   status: '',
   sender: mockRoomMessageSender(),
   room: mockRoomMessageRoom(),

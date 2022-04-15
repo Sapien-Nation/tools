@@ -1,3 +1,6 @@
+// constants
+import { MessageType } from '../constants/rooms';
+
 // types
 import type { ISOString } from './common';
 
@@ -32,9 +35,8 @@ export interface RoomMessage {
   id: string;
   content: string;
   createdAt: ISOString;
-  type: string;
+  type: MessageType;
   status?: string;
   sender: RoomMessageSender;
   room?: RoomMessageRoom;
-  isOptimistic?: boolean;
 }
