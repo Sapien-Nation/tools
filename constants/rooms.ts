@@ -8,3 +8,7 @@ export enum MessageType {
   OptimisticWithAttachment,
   Text,
 }
+
+export enum WSEvents {
+  NewMessage = 'room.new-message',
+}
