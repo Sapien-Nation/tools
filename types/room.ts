@@ -36,5 +36,5 @@ export interface RoomMessage {
   status?: string;
   sender: RoomMessageSender;
   room?: RoomMessageRoom;
-  isLocal?: boolean;
+  isOptimistic?: boolean;
 }

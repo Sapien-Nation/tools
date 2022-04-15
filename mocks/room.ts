@@ -48,6 +48,7 @@ export const mockRoomMessage = ({
   id,
   content: '',
   createdAt: new Date().toISOString(),
+  isOptimistic: false,
   type: '',
   status: '',
   sender: mockRoomMessageSender(),
