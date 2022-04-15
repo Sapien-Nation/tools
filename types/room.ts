@@ -33,7 +33,7 @@ export interface RoomMessage {
   content: string;
   createdAt: ISOString;
   type: string;
-  status: string;
+  status?: string;
   sender: RoomMessageSender;
-  room: RoomMessageRoom;
+  room?: RoomMessageRoom;
 }
