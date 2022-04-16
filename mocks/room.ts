@@ -1,3 +1,5 @@
+import _uniqueId from 'lodash/uniqueId';
+
 // constants
 import { MessageType } from '../constants/rooms';
 
@@ -46,7 +48,7 @@ export const mockRoomMessageRoom = ({
 });
 
 export const mockRoomMessage = ({
-  id = '1',
+  id = _uniqueId('room_message_'),
 }: Partial<RoomMessage> = {}): RoomMessage => ({
   id,
   content: '',
