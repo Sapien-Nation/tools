@@ -2,12 +2,20 @@
 import { Types as UserTypes, Status as UserStatus } from '../constants/user';
 
 // types
-import type { PublicProfile, User } from '../types/user';
+import type { PublicProfile, User, UserPassport } from '../types/user';
+
+export const mockUserPassport = ({
+  ...rest
+}: Partial<UserPassport> = {}): UserPassport => ({
+  avatar: '',
+  ...rest,
+});
 
 export const mockUser = ({
   id = '1000',
   ...rest
 }: Partial<User> = {}): User => ({
+  passport: null,
   avatar: '',
   id,
   bio: '',
@@ -29,6 +37,11 @@ export const mockPublicPofile = ({
   ...rest
 }: Partial<PublicProfile> = {}): PublicProfile => ({
   avatar: '',
+  passport: null,
+  firstName: 'John',
+  lastName: 'Doe',
+  username: 'johndoe',
+  title: '',
   id,
   bio: '',
   displayName: 'Jhon Doe',

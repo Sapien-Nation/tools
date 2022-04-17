@@ -4,7 +4,12 @@ import { Types, Status } from '../constants/user';
 // types
 import type { ISOString } from './common';
 
+export interface UserPassport {
+  avatar: string;
+}
+
 export interface User {
+  passport: UserPassport | null;
   avatar: string;
   bio: string;
   id: string;
@@ -26,4 +31,9 @@ export interface PublicProfile {
   id: string;
   bio: string;
   displayName: string;
+  passport: UserPassport | null;
+  firstName: string;
+  lastName: string;
+  username: string;
+  title: string;
 }
