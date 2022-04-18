@@ -11,4 +11,10 @@ export enum MessageType {
 
 export enum WSEvents {
   NewMessage = 'room.new-message',
+  RoomMention = 'room.mention',
+  RoomInvite = 'room.invite',
+  RoomNewMemberJoin = 'room.new-member-join',
+  RoomReaction = 'room.reaction',
+  RoomMessageReply = 'room.message-reply',
+  RoomReportMessage = 'room.report-message',
 }
