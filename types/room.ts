@@ -25,6 +25,13 @@ export interface RoomMessageSender {
   username: string;
 }
 
+export interface RoomMessageReceiver {
+  id: string;
+  avatar: string;
+  displayName: string;
+  username: string;
+}
+
 export interface RoomMessageRoom {
   id: string;
   name: string;
@@ -39,4 +46,29 @@ export interface RoomMessage {
   status?: string;
   sender: RoomMessageSender;
   room?: RoomMessageRoom;
+}
+
+export interface RoomMessage {
+  id: string;
+  content: string;
+  createdAt: ISOString;
+  type: MessageType;
+  status?: string;
+  sender: RoomMessageSender;
+  room?: RoomMessageRoom;
+}
+
+export interface RoomNewMessage {
+  id: string;
+  createdAt: ISOString;
+  by: RoomMessageSender;
+  to: RoomMessageReceiver;
+  link: string;
+  tribeId: string;
+  payload: string;
+  extra: {
+    roomId: string;
+    roomName: string;
+    tribeId: string;
+  }
 }
