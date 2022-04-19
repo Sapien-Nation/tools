@@ -72,3 +72,8 @@ export interface RoomNewMessage {
     tribeId: string;
   }
 }
+
+export interface RoomMessageEvent {
+  data: RoomNewMessage;
+  type: string;
+}
