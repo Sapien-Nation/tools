@@ -6,7 +6,7 @@ import type { ISOString } from './common';
 
 export interface UserPassport {
   avatar: string;
-  passportNumber: number;
+  passportId: number;
   issueDate: ISOString;
   issuingAuthority: string;
 }
