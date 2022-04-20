@@ -7,8 +7,11 @@ import type { PublicProfile, User, UserPassport } from '../types/user';
 export const mockUserPassport = ({
   ...rest
 }: Partial<UserPassport> = {}): UserPassport => ({
-  avatar: '',
   ...rest,
+  avatar: '',
+  passportNumber: 0,
+  issueDate: new Date().toISOString(),
+  issuingAuthority: '1',
 });
 
 export const mockUser = ({
@@ -18,6 +21,7 @@ export const mockUser = ({
   passport: null,
   avatar: '',
   id,
+  title: '',
   bio: '',
   type: UserTypes.User,
   username: 'jhon',

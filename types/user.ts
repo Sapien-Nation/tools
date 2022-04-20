@@ -6,6 +6,9 @@ import type { ISOString } from './common';
 
 export interface UserPassport {
   avatar: string;
+  passportNumber: number;
+  issueDate: ISOString;
+  issuingAuthority: string;
 }
 
 export interface User {
@@ -20,6 +23,7 @@ export interface User {
   lastName: string;
   displayName: string;
   email: string;
+  title: string;
   createdAt: ISOString;
   updatedAt: ISOString;
   v2Id?: string;
