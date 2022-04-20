@@ -8,7 +8,11 @@ export const mockUserPassport = ({
   ...rest
 }: Partial<UserPassport> = {}): UserPassport => ({
   ...rest,
-  avatar: '',
+  bio: '',
+  title: '',
+  image: '',
+  username: 'jhondoe',
+  displayName: 'jhon doe',
   passportId: 0,
   issueDate: new Date().toISOString(),
   issuingAuthority: 'Sapien Nation',

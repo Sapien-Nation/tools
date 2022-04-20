@@ -5,7 +5,11 @@ import { Types, Status } from '../constants/user';
 import type { ISOString } from './common';
 
 export interface UserPassport {
-  avatar: string;
+  bio: string;
+  title: string;
+  displayName: string;
+  username: string;
+  image: string;
   passportId: number;
   issueDate: ISOString;
   issuingAuthority: string;
