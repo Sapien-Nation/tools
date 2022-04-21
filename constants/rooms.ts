@@ -6,8 +6,8 @@ export enum AboutObject {
 export enum MessageType {
   Optimistic,
   OptimisticWithAttachment,
-  Text,
-  Join = 'join',
+  Text = 'C',
+  Join = 'J',
 }
 
 export enum WSEvents {
