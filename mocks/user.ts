@@ -10,7 +10,7 @@ export const mockUserPassport = ({
   ...rest,
   bio: '',
   title: '',
-  image: '',
+  media: '',
   username: 'jhondoe',
   displayName: 'jhon doe',
   passportId: 0,
