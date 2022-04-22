@@ -13,6 +13,7 @@ export interface RoomDetailMember {
   displayName: string;
   avatar: string;
   userType: RoomMemberType;
+  username: string;
 }
 
 export interface RoomDetail {
