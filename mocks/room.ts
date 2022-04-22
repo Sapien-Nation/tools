@@ -31,6 +31,7 @@ export const mockRoomDetailMember = ({
   id,
   userType: RoomMemberType.Admin,
   displayName: `Member ${id}`,
+  username: '',
   avatar: null,
   ...rest,
 });
