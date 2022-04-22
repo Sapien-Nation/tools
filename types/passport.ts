@@ -6,6 +6,7 @@ export interface Passport {
   title: string;
   displayName: string;
   username: string;
+  tokenId: string;
   image: string;
   name: string;
   passportId: number;
