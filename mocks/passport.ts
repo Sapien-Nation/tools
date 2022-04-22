@@ -11,6 +11,7 @@ export const mockUserPassport = ({
   displayName: 'John Doe',
   username: 'johndoe',
   image: '',
+  name: 'Ghandi',
   passportId: 0,
   issueDate: new Date().toISOString(),
   issuingAuthority: 'Sapien Nation',
