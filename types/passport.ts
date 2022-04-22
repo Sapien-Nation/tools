@@ -7,6 +7,7 @@ export interface Passport {
   displayName: string;
   username: string;
   image: string;
+  name: string;
   passportId: number;
   issueDate: ISOString;
   issuingAuthority: string;
