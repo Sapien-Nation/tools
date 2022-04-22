@@ -8,6 +8,7 @@ export interface UserPassport {
   bio: string;
   title: string;
   displayName: string;
+  tokenID: string;
   username: string;
   media?: string;
   image: string;
