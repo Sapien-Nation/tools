@@ -19,3 +19,9 @@ export enum WSEvents {
   RoomMessageReply = 'room.message-reply',
   RoomReportMessage = 'room.report-message',
 }
+
+export enum RoomMemberType {
+  Admin = 'A',
+  Participant = 'P',
+  Viewer = 'V',
+}

@@ -1,6 +1,10 @@
 // constants
 import { MessageType } from '../constants/rooms';
 
+// constants
+import { Types as UserTypes } from '../constants/user';
+import { RoomMemberType } from '../constants/rooms';
+
 // types
 import type { ISOString } from './common';
 
@@ -8,6 +12,7 @@ export interface RoomDetailMember {
   id: string;
   displayName: string;
   avatar: string;
+  userType: RoomMemberType;
 }
 
 export interface RoomDetail {
@@ -70,7 +75,7 @@ export interface RoomNewMessage {
     roomId: string;
     roomName: string;
     tribeId: string;
-  }
+  };
 }
 
 export interface RoomMessageEvent {

@@ -1,7 +1,7 @@
 import _uniqueId from 'lodash/uniqueId';
 
 // constants
-import { MessageType } from '../constants/rooms';
+import { MessageType, RoomMemberType } from '../constants/rooms';
 
 // types
 import type {
@@ -29,6 +29,7 @@ export const mockRoomDetailMember = ({
   ...rest
 }: Partial<RoomDetailMember> = {}): RoomDetailMember => ({
   id,
+  userType: RoomMemberType.Admin,
   displayName: `Member ${id}`,
   avatar: null,
   ...rest,
