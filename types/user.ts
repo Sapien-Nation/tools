@@ -7,7 +7,6 @@ import type { ISOString } from './common';
 export interface UserPassport {
   bio: string;
   title: string;
-  displayName: string;
   tokenId: number;
   username: string;
   media?: string;
@@ -27,7 +26,6 @@ export interface User {
   status: Status.A;
   firstName: string;
   lastName: string;
-  displayName: string;
   email: string;
   title: string;
   createdAt: ISOString;
@@ -40,7 +38,6 @@ export interface PublicProfile {
   avatar: string;
   id: string;
   bio: string;
-  displayName: string;
   passport: UserPassport | null;
   firstName: string;
   lastName: string;

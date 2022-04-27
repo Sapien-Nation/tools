@@ -4,7 +4,6 @@ import type { ISOString } from './common';
 export interface Passport {
   bio: string;
   title: string;
-  displayName: string;
   username: string;
   tokenId: number;
   image: string;

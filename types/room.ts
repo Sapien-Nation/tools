@@ -10,7 +10,6 @@ import type { ISOString } from './common';
 
 export interface RoomDetailMember {
   id: string;
-  displayName: string;
   avatar: string;
   userType: RoomMemberType;
   username: string;
@@ -27,14 +26,12 @@ export interface RoomDetail {
 export interface RoomMessageSender {
   id: string;
   avatar: string;
-  displayName: string;
   username: string;
 }
 
 export interface RoomMessageReceiver {
   id: string;
   avatar: string;
-  displayName: string;
   username: string;
 }
 

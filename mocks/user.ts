@@ -14,7 +14,6 @@ export const mockUserPassport = ({
   tokenId: 1,
   image: '',
   username: 'jhondoe',
-  displayName: 'jhon doe',
   passportId: 0,
   issueDate: new Date().toISOString(),
   issuingAuthority: 'Sapien Nation',
@@ -34,7 +33,6 @@ export const mockUser = ({
   status: UserStatus.A,
   firstName: 'doe',
   lastName: 'doe',
-  displayName: 'Jhon Doe',
   email: 'jhon@test.com',
   createdAt: new Date().toISOString(),
   updatedAt: new Date().toISOString(),
@@ -54,6 +52,5 @@ export const mockPublicPofile = ({
   title: '',
   id,
   bio: '',
-  displayName: 'Jhon Doe',
   ...rest,
 });
