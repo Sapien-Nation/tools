@@ -73,6 +73,16 @@ export interface RoomNewMessage {
     roomId: string;
     roomName: string;
     tribeId: string;
+    messageId: string;
+  };
+}
+
+export interface RoomDeleteMessage {
+  extra: {
+    roomId: string;
+    roomName: string;
+    tribeId: string;
+    messageId: string;
   };
 }
 
