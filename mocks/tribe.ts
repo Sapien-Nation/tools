@@ -49,6 +49,7 @@ export const mockProfileTribeRoom = ({
   name: `Room ${id}`,
   topics: [],
   createdAt: new Date().toISOString(),
+  hasUnreadMessages: false,
   ...rest,
 });
 

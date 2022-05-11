@@ -33,6 +33,7 @@ export interface ProfileTribeRoom {
   name: string;
   createdAt: ISOString;
   topics: Array<RoomTopic>;
+  hasUnreadMessages: boolean;
 }
 
 export interface ProfileTribe {
