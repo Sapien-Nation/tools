@@ -8,6 +8,7 @@ import type {
   RoomDetail,
   RoomDetailMember,
   RoomMessage,
+  RoomMessageMention,
   RoomMessageRoom,
   RoomMessageSender,
 } from '../types/room';
@@ -55,6 +56,16 @@ export const mockRoomMessageRoom = ({
   ...rest,
 });
 
+export const mockRoomMessageMention = ({
+  id = _uniqueId('room_message_mention_'),
+  ...rest
+}: Partial<RoomMessageMention> = {}): RoomMessageMention => ({
+  id,
+  avatar: '',
+  username: 'jhondoe',
+  ...rest,
+});
+
 export const mockRoomMessage = ({
   id = _uniqueId('room_message_'),
   ...rest
@@ -66,5 +77,6 @@ export const mockRoomMessage = ({
   status: '',
   sender: mockRoomMessageSender(),
   room: mockRoomMessageRoom(),
+  mentions: [],
   ...rest,
 });

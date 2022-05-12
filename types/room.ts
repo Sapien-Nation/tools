@@ -51,6 +51,12 @@ export interface RoomMessage {
   room?: RoomMessageRoom;
 }
 
+export interface RoomMessageMention {
+  avatar: string;
+  id: string;
+  username: string;
+}
+
 export interface RoomMessage {
   id: string;
   content: string;
@@ -59,6 +65,7 @@ export interface RoomMessage {
   status?: string;
   sender: RoomMessageSender;
   room?: RoomMessageRoom;
+  mentions: Array<RoomMessageMention>;
 }
 
 export interface RoomNewMessage {
