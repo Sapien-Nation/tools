@@ -49,6 +49,7 @@ export interface ProfileTribe {
 }
 
 export interface MainFeedTribe {
+  id: string;
   avatar: Media;
   avatar_original: Media;
   cover: Media;
