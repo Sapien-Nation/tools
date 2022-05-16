@@ -11,6 +11,7 @@ import type { ISOString } from './common';
 export interface RoomDetailMember {
   id: string;
   avatar: string;
+  displayName: string;
   userType: RoomMemberType;
   username: string;
 }
