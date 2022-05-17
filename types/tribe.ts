@@ -83,3 +83,11 @@ export interface TribeInvite {
   ownerName: string;
   membersCount: number;
 }
+
+export interface TribeVaultBadges {
+  id: string;
+}
+
+export interface TribeVault {
+  badges: Array<TribeVaultBadges>;
+}
