@@ -5,3 +5,8 @@ export enum Types {
 export enum Status {
   A,
 }
+
+export enum PassportStatus {
+  S = 'S',
+  P = 'P',
+}

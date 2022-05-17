@@ -1,5 +1,9 @@
 // constants
-import { Types as UserTypes, Status as UserStatus } from '../constants/user';
+import {
+  Types as UserTypes,
+  Status as UserStatus,
+  PassportStatus,
+} from '../constants/user';
 
 // types
 import type { PublicProfile, User, UserPassport } from '../types/user';
@@ -7,7 +11,6 @@ import type { PublicProfile, User, UserPassport } from '../types/user';
 export const mockUserPassport = ({
   ...rest
 }: Partial<UserPassport> = {}): UserPassport => ({
-  ...rest,
   bio: '',
   title: '',
   media: '',
@@ -17,6 +20,8 @@ export const mockUserPassport = ({
   passportId: 0,
   issueDate: new Date().toISOString(),
   issuingAuthority: 'Sapien Nation',
+  status: PassportStatus.P,
+  ...rest,
 });
 
 export const mockUser = ({

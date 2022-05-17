@@ -1,5 +1,5 @@
 // constants
-import { Types, Status } from '../constants/user';
+import { Types, Status, PassportStatus } from '../constants/user';
 
 // types
 import type { ISOString } from './common';
@@ -14,6 +14,7 @@ export interface UserPassport {
   passportId: number;
   issueDate: ISOString;
   issuingAuthority: string;
+  status: PassportStatus;
 }
 
 export interface User {

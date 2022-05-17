@@ -67,6 +67,7 @@ export const mockProfileTribe = ({
   isMain: false,
   rooms: [],
   identifier: '',
+  isUpgraded: false,
   permissions: mockTribePermissions(),
   role: Role.Member,
   ...rest,
