@@ -9,6 +9,7 @@ import type {
   ProfileTribePermissions,
   ProfileTribeRoom,
   RoomTopic,
+  TribeBadge,
   TribeInvite,
   TribeMember,
   TribeVault,
@@ -124,5 +125,15 @@ export const mockTribeMember = ({
   avatar: '',
   displayName: 'Jhon Doe',
   username: 'jhondoe',
+  ...rest,
+});
+
+export const mockTribeBadge = ({
+  id = '1000',
+  ...rest
+}: Partial<TribeBadge> = {}): TribeBadge => ({
+  id,
+  image: '',
+  description: '',
   ...rest,
 });

@@ -99,3 +99,9 @@ export interface TribeMember {
   username: string;
   displayName: string;
 }
+
+export interface TribeBadge {
+  image: string;
+  id: string;
+  description: string;
+}
