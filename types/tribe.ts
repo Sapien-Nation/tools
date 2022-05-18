@@ -104,4 +104,5 @@ export interface TribeBadge {
   image: string;
   id: string;
   description: string;
+  name: string;
 }

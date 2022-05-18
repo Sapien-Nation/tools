@@ -134,6 +134,7 @@ export const mockTribeBadge = ({
 }: Partial<TribeBadge> = {}): TribeBadge => ({
   id,
   image: '',
+  name: `Badge ${id}`,
   description: '',
   ...rest,
 });
