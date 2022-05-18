@@ -92,3 +92,10 @@ export interface TribeVaultBadges {
 export interface TribeVault {
   badges: Array<TribeVaultBadges>;
 }
+
+export interface TribeMember {
+  avatar: string;
+  id: string;
+  username: string;
+  displayName: string;
+}
