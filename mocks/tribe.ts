@@ -125,6 +125,7 @@ export const mockTribeMember = ({
   avatar: '',
   displayName: 'Jhon Doe',
   username: 'jhondoe',
+  walletAddress: '',
   ...rest,
 });
 

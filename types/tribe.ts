@@ -98,6 +98,7 @@ export interface TribeMember {
   id: string;
   username: string;
   displayName: string;
+  walletAddress: string;
 }
 
 export interface TribeBadge {
