@@ -40,6 +40,7 @@ export const mockUser = ({
   lastName: 'doe',
   email: 'jhon@test.com',
   createdAt: new Date().toISOString(),
+  displayName: 'jhon doe',
   updatedAt: new Date().toISOString(),
   walletAddress: '0xb794f5ea0ba39494ce839613fffba74279579268',
   ...rest,

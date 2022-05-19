@@ -20,6 +20,7 @@ export interface UserPassport {
 export interface User {
   passport: UserPassport | null;
   avatar: string;
+  displayName: string;
   bio: string;
   id: string;
   type: Types.User;
