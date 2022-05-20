@@ -34,8 +34,9 @@ export interface ProfileTribeRoom {
   name: string;
   createdAt: ISOString;
   topics: Array<RoomTopic>;
-  unreads: number;
   lastMessageId: string;
+  hasUnread: boolean;
+  unreadMentions: number;
 }
 
 export interface ProfileTribe {
