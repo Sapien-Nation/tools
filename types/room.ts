@@ -82,6 +82,7 @@ export interface RoomNewMessage {
     roomName: string;
     tribeId: string;
     messageId: string;
+    mentions: Array<string>;
   };
 }
 
