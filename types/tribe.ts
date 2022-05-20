@@ -102,7 +102,7 @@ export interface TribeMember {
 }
 
 export interface TribeBadge {
-  image: string;
+  color: string;
   id: string;
   description: string;
   name: string;
