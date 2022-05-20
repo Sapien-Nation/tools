@@ -7,4 +7,5 @@ export enum Role {
 export enum BadgeTypes {
   Draft,
   Normal,
+  Owner,
 }
