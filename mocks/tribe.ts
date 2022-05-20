@@ -1,5 +1,6 @@
 // constants
 import { Role } from '../constants/tribe';
+import { BadgeTypes } from '../constants/tribe';
 
 // types
 import type {
@@ -137,5 +138,6 @@ export const mockTribeBadge = ({
   color: '#6200EA',
   name: `Badge ${id}`,
   description: '',
+  type: BadgeTypes.Normal,
   ...rest,
 });
