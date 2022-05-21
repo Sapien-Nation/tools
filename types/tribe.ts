@@ -109,4 +109,6 @@ export interface TribeBadge {
   description: string;
   name: string;
   type: BadgeTypes;
+  owners: Array<string>;
+  permissions: Array<string>;
 }

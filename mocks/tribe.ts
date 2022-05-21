@@ -140,5 +140,7 @@ export const mockTribeBadge = ({
   name: `Badge ${id}`,
   description: '',
   type: BadgeTypes.Normal,
+  owners: [],
+  permissions: [],
   ...rest,
 });
