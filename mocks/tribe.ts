@@ -11,6 +11,7 @@ import type {
   ProfileTribeRoom,
   RoomTopic,
   TribeBadge,
+  TribeDiscoveryBadge,
   TribeInvite,
   TribeMember,
   TribeVault,
@@ -142,5 +143,20 @@ export const mockTribeBadge = ({
   type: BadgeTypes.Normal,
   owners: [],
   permissions: [],
+  ...rest,
+});
+
+export const mockTribeDiscoveryBadge = ({
+  id = '1000',
+  ...rest
+}: Partial<TribeDiscoveryBadge> = {}): TribeDiscoveryBadge => ({
+  id,
+  color: '#6200EA',
+  name: `Badge ${id}`,
+  description: '',
+  type: BadgeTypes.Normal,
+  owners: [],
+  permissions: [],
+  image: '',
   ...rest,
 });

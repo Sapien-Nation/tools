@@ -112,3 +112,13 @@ export interface TribeBadge {
   owners: Array<string>;
   permissions: Array<string>;
 }
+export interface TribeDiscoveryBadge {
+  color: string;
+  id: string;
+  image: string;
+  description: string;
+  name: string;
+  type: BadgeTypes;
+  owners: Array<string>;
+  permissions: Array<string>;
+}
