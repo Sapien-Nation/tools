@@ -141,6 +141,7 @@ export const mockTribeBadge = ({
   name: `Badge ${id}`,
   description: '',
   tribeID: '1000',
+  numberIssued: 0,
   type: BadgeTypes.Normal,
   owners: [],
   permissions: [],

@@ -112,6 +112,7 @@ export interface TribeBadge {
   owners: Array<string>;
   permissions: Array<string>;
   tribeID: string;
+  numberIssued: number;
 }
 export interface TribeDiscoveryBadge {
   color: string;
