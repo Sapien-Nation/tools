@@ -140,6 +140,7 @@ export const mockTribeBadge = ({
   color: '#6200EA',
   name: `Badge ${id}`,
   description: '',
+  tribeID: '1000',
   type: BadgeTypes.Normal,
   owners: [],
   permissions: [],

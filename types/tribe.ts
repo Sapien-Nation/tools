@@ -111,6 +111,7 @@ export interface TribeBadge {
   type: BadgeTypes;
   owners: Array<string>;
   permissions: Array<string>;
+  tribeID: string;
 }
 export interface TribeDiscoveryBadge {
   color: string;
