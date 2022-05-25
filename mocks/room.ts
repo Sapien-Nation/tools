@@ -44,6 +44,7 @@ export const mockRoomMessageSender = ({
   id,
   avatar: null,
   username: `jhondoe`,
+  badge: null,
   ...rest,
 });
 

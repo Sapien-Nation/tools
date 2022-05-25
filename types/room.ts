@@ -24,6 +24,20 @@ export interface RoomDetail {
   isOwner: boolean;
 }
 
+export interface RoomMessageSenderBadge {
+  id: string;
+  image: string;
+  color: string;
+  name: string;
+}
+
+export interface RoomMessageSender {
+  id: string;
+  avatar: string;
+  username: string;
+  badge: RoomMessageSenderBadge | null;
+}
+
 export interface RoomMessageSender {
   id: string;
   avatar: string;
