@@ -104,8 +104,8 @@ export interface TribeMember {
 }
 
 export interface TribeBadgeTribe {
+  avatar: string;
   id: string;
-  image: string;
   name: string;
 }
 
