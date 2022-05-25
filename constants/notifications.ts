@@ -1,4 +1,5 @@
 export enum NotificationsType {
-  OwnerBadgeAssignment = 'badges.owner',
-  BadgeRequestApproval = 'badges.request.approval',
+  Mention = 'room.mention',
+  BadgeRequest = 'badges.request.approval',
+  BadgeReceived = 'badges.request.received',
 }
