@@ -103,6 +103,12 @@ export interface TribeMember {
   walletAddress: string;
 }
 
+export interface TribeBadgeTribe {
+  id: string;
+  image: string;
+  name: string;
+}
+
 export interface TribeBadge {
   color: string;
   id: string;
@@ -111,7 +117,7 @@ export interface TribeBadge {
   type: BadgeTypes;
   owners: Array<string>;
   permissions: Array<string>;
-  tribeID: string;
+  tribe: TribeBadgeTribe;
   numberIssued: number;
 }
 export interface TribeDiscoveryBadge {
