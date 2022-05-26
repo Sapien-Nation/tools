@@ -126,4 +126,5 @@ export interface TribeDiscoveryBadge {
   name: string;
   type: BadgeTypes;
   numberIssued: number;
+  tribeName: string;
 }

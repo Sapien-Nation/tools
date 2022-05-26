@@ -167,5 +167,6 @@ export const mockTribeDiscoveryBadge = ({
   type: BadgeTypes.Normal,
   avatar: '',
   numberIssued: 0,
+  tribeName: '',
   ...rest,
 });
