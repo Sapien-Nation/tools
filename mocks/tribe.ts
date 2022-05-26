@@ -151,11 +151,8 @@ export const mockTribeBadge = ({
   color: '#6200EA',
   name: `Badge ${id}`,
   description: '',
-  tribe: mockTribeBadgeTribe(),
-  numberIssued: 0,
   type: BadgeTypes.Normal,
-  owners: [],
-  permissions: [],
+  avatar: '',
   ...rest,
 });
 
@@ -168,8 +165,7 @@ export const mockTribeDiscoveryBadge = ({
   name: `Badge ${id}`,
   description: '',
   type: BadgeTypes.Normal,
-  owners: [],
-  permissions: [],
-  image: '',
+  avatar: '',
+  numberIssued: 0,
   ...rest,
 });

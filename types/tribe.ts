@@ -110,23 +110,20 @@ export interface TribeBadgeTribe {
 }
 
 export interface TribeBadge {
+  avatar: string;
   color: string;
   id: string;
   description: string;
   name: string;
   type: BadgeTypes;
-  owners: Array<string>;
-  permissions: Array<string>;
-  tribe: TribeBadgeTribe;
-  numberIssued: number;
 }
+
 export interface TribeDiscoveryBadge {
   color: string;
   id: string;
-  image: string;
+  avatar: string;
   description: string;
   name: string;
   type: BadgeTypes;
-  owners: Array<string>;
-  permissions: Array<string>;
+  numberIssued: number;
 }
