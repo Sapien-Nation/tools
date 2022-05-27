@@ -76,6 +76,7 @@ export const mockProfileTribe = ({
   isUpgraded: false,
   permissions: mockTribePermissions(),
   role: Role.Member,
+  safeAddress: null,
   ...rest,
 });
 

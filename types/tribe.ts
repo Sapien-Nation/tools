@@ -50,6 +50,7 @@ export interface ProfileTribe {
   rooms: Array<ProfileTribeRoom>;
   permissions: ProfileTribePermissions;
   role: Role;
+  safeAddress: string | null;
 }
 
 export interface MainFeedTribe {
