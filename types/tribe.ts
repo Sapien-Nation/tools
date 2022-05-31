@@ -122,7 +122,7 @@ export interface TribeBadge {
   id: string;
   description: string;
   name: string;
-  owners: Array<TribeBadgeMember>;
+  owners?: Array<TribeBadgeMember>;
   numberIssued?: number;
   tribeName?: string;
 }
