@@ -10,7 +10,6 @@ import type {
   ProfileTribeRoom,
   RoomTopic,
   TribeBadge,
-  TribeBadgeTribe,
   TribeInvite,
   TribeMember,
   TribeVault,
@@ -129,16 +128,6 @@ export const mockTribeMember = ({
   displayName: 'Jhon Doe',
   username: 'jhondoe',
   walletAddress: '',
-  ...rest,
-});
-
-export const mockTribeBadgeTribe = ({
-  id = '1000',
-  ...rest
-}: Partial<TribeBadgeTribe> = {}): TribeBadgeTribe => ({
-  id,
-  avatar: '',
-  name: `Tribe ${id}`,
   ...rest,
 });
 

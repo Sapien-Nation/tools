@@ -103,12 +103,6 @@ export interface TribeMember {
   walletAddress: string;
 }
 
-export interface TribeBadgeTribe {
-  avatar: string;
-  id: string;
-  name: string;
-}
-
 export interface TribeBadgeMember {
   id: string;
   walletAddress: string;
