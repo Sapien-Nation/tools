@@ -10,7 +10,6 @@ import type {
   ProfileTribeRoom,
   RoomTopic,
   TribeBadge,
-  TribeBadgeOwner,
   TribeBadgeTribe,
   TribeDiscoveryBadge,
   TribeInvite,
@@ -169,15 +168,5 @@ export const mockTribeDiscoveryBadge = ({
   numberIssued: 0,
   tribeName: '',
   owners: [],
-  ...rest,
-});
-
-export const mockTribeBadgeOwner = ({
-  id = '1000',
-  ...rest
-}: Partial<TribeBadgeOwner> = {}): TribeBadgeOwner => ({
-  id,
-  avatar: '',
-  username: '',
   ...rest,
 });
