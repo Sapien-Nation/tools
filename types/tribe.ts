@@ -109,13 +109,20 @@ export interface TribeBadgeTribe {
   name: string;
 }
 
+export interface TribeBadgeMember {
+  id: string;
+  walletAddress: string;
+  username?: string;
+  avatar?: string;
+}
+
 export interface TribeBadge {
   avatar: string;
   color: string;
   id: string;
   description: string;
   name: string;
-  owners: Array<string>;
+  owners: Array<TribeBadgeMember>;
 }
 
 export interface TribeDiscoveryBadge {
@@ -126,5 +133,5 @@ export interface TribeDiscoveryBadge {
   name: string;
   numberIssued: number;
   tribeName: string;
-  owners: Array<string>;
+  owners: Array<TribeBadgeMember>;
 }
