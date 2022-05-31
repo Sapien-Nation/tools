@@ -11,7 +11,6 @@ import type {
   RoomTopic,
   TribeBadge,
   TribeBadgeTribe,
-  TribeDiscoveryBadge,
   TribeInvite,
   TribeMember,
   TribeVault,
@@ -152,21 +151,6 @@ export const mockTribeBadge = ({
   name: `Badge ${id}`,
   description: '',
   avatar: '',
-  owners: [],
-  ...rest,
-});
-
-export const mockTribeDiscoveryBadge = ({
-  id = '1000',
-  ...rest
-}: Partial<TribeDiscoveryBadge> = {}): TribeDiscoveryBadge => ({
-  id,
-  color: '#6200EA',
-  name: `Badge ${id}`,
-  description: '',
-  avatar: '',
-  numberIssued: 0,
-  tribeName: '',
   owners: [],
   ...rest,
 });

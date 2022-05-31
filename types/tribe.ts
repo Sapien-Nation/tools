@@ -117,21 +117,12 @@ export interface TribeBadgeMember {
 }
 
 export interface TribeBadge {
-  avatar: string;
+  avatar?: string;
   color: string;
   id: string;
   description: string;
   name: string;
   owners: Array<TribeBadgeMember>;
-}
-
-export interface TribeDiscoveryBadge {
-  color: string;
-  id: string;
-  avatar: string;
-  description: string;
-  name: string;
-  numberIssued: number;
-  tribeName: string;
-  owners: Array<TribeBadgeMember>;
+  numberIssued?: number;
+  tribeName?: string;
 }
