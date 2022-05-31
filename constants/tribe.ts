@@ -3,9 +3,3 @@ export enum Role {
   Owner = 'OWNER',
   Member = 'MEMBER',
 }
-
-export enum BadgeTypes {
-  Draft,
-  Normal,
-  Owner,
-}

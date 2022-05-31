@@ -1,6 +1,5 @@
 // constants
 import { Role } from '../constants/tribe';
-import { BadgeTypes } from '../constants/tribe';
 
 // types
 import type {
@@ -11,6 +10,7 @@ import type {
   ProfileTribeRoom,
   RoomTopic,
   TribeBadge,
+  TribeBadgeOwner,
   TribeBadgeTribe,
   TribeDiscoveryBadge,
   TribeInvite,
@@ -152,8 +152,8 @@ export const mockTribeBadge = ({
   color: '#6200EA',
   name: `Badge ${id}`,
   description: '',
-  type: BadgeTypes.Normal,
   avatar: '',
+  owners: [],
   ...rest,
 });
 
@@ -165,9 +165,18 @@ export const mockTribeDiscoveryBadge = ({
   color: '#6200EA',
   name: `Badge ${id}`,
   description: '',
-  type: BadgeTypes.Normal,
   avatar: '',
   numberIssued: 0,
   tribeName: '',
+  ...rest,
+});
+
+export const mockTribeBadgeOwner = ({
+  id = '1000',
+  ...rest
+}: Partial<TribeBadgeOwner> = {}): TribeBadgeOwner => ({
+  id,
+  avatar: '',
+  username: '',
   ...rest,
 });

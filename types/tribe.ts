@@ -1,6 +1,5 @@
 // constants
 import { Role } from '../constants/tribe';
-import { BadgeTypes } from '../constants/tribe';
 
 // types
 import type { ISOString, Media } from './common';
@@ -110,13 +109,19 @@ export interface TribeBadgeTribe {
   name: string;
 }
 
+export interface TribeBadgeOwner {
+  id: string;
+  avatar: string;
+  username: string;
+}
+
 export interface TribeBadge {
   avatar: string;
   color: string;
   id: string;
   description: string;
   name: string;
-  type: BadgeTypes;
+  owners: Array<TribeBadgeOwner>;
 }
 
 export interface TribeDiscoveryBadge {
@@ -125,7 +130,6 @@ export interface TribeDiscoveryBadge {
   avatar: string;
   description: string;
   name: string;
-  type: BadgeTypes;
   numberIssued: number;
   tribeName: string;
 }
