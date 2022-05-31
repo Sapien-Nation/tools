@@ -132,4 +132,5 @@ export interface TribeDiscoveryBadge {
   name: string;
   numberIssued: number;
   tribeName: string;
+  owners: Array<TribeBadgeOwner>;
 }

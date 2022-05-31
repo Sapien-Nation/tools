@@ -168,6 +168,7 @@ export const mockTribeDiscoveryBadge = ({
   avatar: '',
   numberIssued: 0,
   tribeName: '',
+  owners: [],
   ...rest,
 });
 
