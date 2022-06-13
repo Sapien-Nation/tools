@@ -36,7 +36,7 @@ export const mockNotification = ({
   id,
   payload: 'This is a Message payload',
   tribeId: '1000',
-  type: NotificationsType.BadgeReceived,
+  type: NotificationsType.BadgeGrant,
   link: '',
   to: mockNotificationReceiver(),
   by: mockNotificationSender(),
