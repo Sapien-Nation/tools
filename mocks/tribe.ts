@@ -3,6 +3,8 @@ import { Role } from '../constants/tribe';
 
 // types
 import type {
+  BadgeTransaction,
+  BadgeTransactionGrantToUsers,
   DiscoveryTribe,
   ProfileTribe,
   ProfileTribeChannel,
@@ -141,5 +143,30 @@ export const mockTribeBadge = ({
   description: '',
   avatar: '',
   owners: [],
+  ...rest,
+});
+
+export const mockBadgeTransactionGrantToUsers = ({
+  id = '1000',
+  ...rest
+}: Partial<BadgeTransactionGrantToUsers> = {}): BadgeTransactionGrantToUsers => ({
+  id,
+  username: 'jhondoe',
+  avatar: '',
+  ...rest,
+});
+
+export const mockBadgeTransaction = ({
+  id = '1000',
+  ...rest
+}: Partial<BadgeTransaction> = {}): BadgeTransaction => ({
+  id,
+  safeTxHash: '0x0000000',
+  badgeId: `2000`,
+  grantToUsers: [],
+  approvals: 0,
+  requiredApprovals: 0,
+  proposedBy: '0x0000000',
+  signedBy: [],
   ...rest,
 });

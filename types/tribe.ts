@@ -120,3 +120,20 @@ export interface TribeBadge {
   numberIssued?: number;
   tribeName?: string;
 }
+
+export interface BadgeTransactionGrantToUsers {
+  id: string;
+  username: string;
+  avatar: string;
+}
+
+export interface BadgeTransaction {
+  id: string;
+  safeTxHash: string;
+  badgeId: string;
+  grantToUsers: Array<BadgeTransactionGrantToUsers>;
+  approvals: number;
+  requiredApprovals: number;
+  proposedBy: string;
+  signedBy: Array<string>;
+}
