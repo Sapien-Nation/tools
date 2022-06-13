@@ -168,5 +168,6 @@ export const mockBadgeTransaction = ({
   requiredApprovals: 0,
   proposedBy: '0x0000000',
   signedBy: [],
+  rejectedBy: [],
   ...rest,
 });

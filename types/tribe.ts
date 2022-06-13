@@ -136,4 +136,5 @@ export interface BadgeTransaction {
   requiredApprovals: number;
   proposedBy: string;
   signedBy: Array<string>;
+  rejectedBy: Array<string>;
 }
