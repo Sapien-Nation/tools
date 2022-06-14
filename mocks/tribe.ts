@@ -1,4 +1,5 @@
 // constants
+import { RoomType } from '../constants/rooms';
 import { Role } from '../constants/tribe';
 
 // types
@@ -58,6 +59,7 @@ export const mockProfileTribeRoom = ({
   unreadMentions: 0,
   hasUnread: false,
   lastMessageId: '',
+  type: RoomType.Public,
   ...rest,
 });
 

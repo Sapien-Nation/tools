@@ -1,5 +1,6 @@
 // constants
 import { Role } from '../constants/tribe';
+import { RoomType } from '../constants/rooms';
 
 // types
 import type { ISOString, Media } from './common';
@@ -36,6 +37,7 @@ export interface ProfileTribeRoom {
   lastMessageId: string;
   hasUnread: boolean;
   unreadMentions: number;
+  type: RoomType;
 }
 
 export interface ProfileTribe {
