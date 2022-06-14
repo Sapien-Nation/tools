@@ -26,3 +26,8 @@ export enum RoomMemberType {
   Participant = 'P',
   Viewer = 'V',
 }
+
+export enum RoomType {
+  Private = 'Private',
+  Public = 'Public',
+}
