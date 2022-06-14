@@ -28,6 +28,6 @@ export enum RoomMemberType {
 }
 
 export enum RoomType {
-  Private = 'Private',
-  Public = 'Public',
+  Private = 'PRIVATE',
+  Public = 'PUBLIC',
 }
