@@ -121,6 +121,7 @@ export interface TribeBadge {
   owners?: Array<TribeBadgeMember>;
   numberIssued?: number;
   tribeName?: string;
+  parentId?: string;
 }
 
 export interface BadgeTransactionGrantToUsers {
