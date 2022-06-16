@@ -38,6 +38,7 @@ export interface ProfileTribeRoom {
   hasUnread: boolean;
   unreadMentions: number;
   type: RoomType;
+  private: boolean;
 }
 
 export interface ProfileTribe {

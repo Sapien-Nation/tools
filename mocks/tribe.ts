@@ -60,6 +60,7 @@ export const mockProfileTribeRoom = ({
   hasUnread: false,
   lastMessageId: '',
   type: RoomType.Public,
+  private: false,
   ...rest,
 });
 
