@@ -5,6 +5,8 @@ import { MessageType, RoomMemberType } from '../constants/rooms';
 
 // types
 import type {
+  RoomBadge,
+  RoomBadgePermission,
   RoomDetail,
   RoomDetailMember,
   RoomMessage,
@@ -80,5 +82,29 @@ export const mockRoomMessage = ({
   sender: mockRoomMessageSender(),
   room: mockRoomMessageRoom(),
   mentions: [],
+  ...rest,
+});
+
+export const mockRoomBadgePermission = (
+  props: Partial<RoomBadgePermission> = {},
+): RoomBadgePermission => ({
+  read: false,
+  write: false,
+  delete: false,
+  grant: false,
+  ...props,
+});
+
+export const mockRoomBadge = ({
+  id = 'room_badge_1',
+  ...rest
+}: Partial<RoomBadge> = {}): RoomBadge => ({
+  id,
+  name: 'Badge',
+  description: 'Badge description',
+  avatar: '',
+  color: 'red',
+  role: 'MEMBER',
+  permission: mockRoomBadgePermission(),
   ...rest,
 });

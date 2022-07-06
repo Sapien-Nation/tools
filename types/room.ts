@@ -2,7 +2,6 @@
 import { MessageType } from '../constants/rooms';
 
 // constants
-import { Types as UserTypes } from '../constants/user';
 import { RoomMemberType } from '../constants/rooms';
 
 // types
@@ -112,4 +111,21 @@ export interface RoomDeleteMessage {
 export interface RoomMessageEvent {
   data: RoomNewMessage;
   type: string;
+}
+
+export interface RoomBadgePermission {
+  read: boolean;
+  write: boolean;
+  delete: boolean;
+  grant: boolean;
+}
+
+export interface RoomBadge {
+  id: string;
+  name: string;
+  description: string;
+  avatar: string;
+  color: string;
+  role: string;
+  permission: RoomBadgePermission;
 }
