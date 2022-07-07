@@ -6,6 +6,7 @@ import { Role } from '../constants/tribe';
 import type {
   BadgeTransaction,
   BadgeTransactionGrantToUsers,
+  DiscoverBadge,
   DiscoveryTribe,
   ProfileTribe,
   ProfileTribeChannel,
@@ -173,5 +174,16 @@ export const mockBadgeTransaction = ({
   proposedBy: '0x0000000',
   signedBy: [],
   rejectedBy: [],
+  ...rest,
+});
+
+export const mockDiscoverBadge = ({
+  id = '1000',
+  ...rest
+}: Partial<DiscoverBadge> = {}): DiscoverBadge => ({
+  id,
+  avatar: '',
+  name: 'name',
+  description: 'description',
   ...rest,
 });

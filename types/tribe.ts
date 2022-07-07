@@ -142,3 +142,10 @@ export interface BadgeTransaction {
   signedBy: Array<string>;
   rejectedBy: Array<string>;
 }
+
+export interface DiscoverBadge {
+  id: string;
+  name: string;
+  description: string;
+  avatar: string;
+}
