@@ -130,6 +130,7 @@ export interface TribeBadge {
     avatar: string;
     avatar_original: string;
     rooms: Array<any>;
+    description: string;
   }>;
 }
 
