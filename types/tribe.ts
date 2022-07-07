@@ -124,6 +124,13 @@ export interface TribeBadge {
   tribeName?: string;
   parentId?: string;
   tribeId?: string;
+  tribes: Array<{
+    id: string;
+    name: string;
+    avatar: string;
+    avatar_original: string;
+    rooms: Array<any>;
+  }>;
 }
 
 export interface BadgeTransactionGrantToUsers {

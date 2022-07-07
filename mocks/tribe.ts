@@ -148,6 +148,7 @@ export const mockTribeBadge = ({
   avatar: '',
   owners: [],
   parentId: '',
+  tribes: [],
   ...rest,
 });
 
