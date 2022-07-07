@@ -123,6 +123,7 @@ export interface TribeBadge {
   numberIssued?: number;
   tribeName?: string;
   parentId?: string;
+  tribeID?: string;
 }
 
 export interface BadgeTransactionGrantToUsers {
