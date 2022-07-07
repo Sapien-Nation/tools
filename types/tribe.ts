@@ -148,4 +148,5 @@ export interface DiscoverBadge {
   name: string;
   description: string;
   avatar: string;
+  color: string;
 }

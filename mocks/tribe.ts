@@ -184,6 +184,7 @@ export const mockDiscoverBadge = ({
   id,
   avatar: '',
   name: 'name',
+  color: 'red',
   description: 'description',
   ...rest,
 });
