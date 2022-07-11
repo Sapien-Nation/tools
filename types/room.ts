@@ -25,7 +25,7 @@ export interface RoomDetail {
 
 export interface RoomMessageSenderBadge {
   id: string;
-  image: string;
+  avatar: string;
   color: string;
   name: string;
 }
@@ -34,7 +34,7 @@ export interface RoomMessageSender {
   id: string;
   avatar: string;
   username: string;
-  badge: RoomMessageSenderBadge | null;
+  badges: Array<RoomMessageSenderBadge>;
 }
 
 export interface RoomMessageSender {

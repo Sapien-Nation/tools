@@ -34,7 +34,7 @@ export const mockRoomDetailMember = ({
   id,
   userType: RoomMemberType.Admin,
   username: '',
-  avatar: null,
+  avatar: '',
   displayName: '',
   ...rest,
 });
@@ -44,9 +44,9 @@ export const mockRoomMessageSender = ({
   ...rest
 }: Partial<RoomMessageSender> = {}): RoomMessageSender => ({
   id,
-  avatar: null,
+  avatar: '',
   username: `jhondoe`,
-  badge: null,
+  badges: [],
   ...rest,
 });
 
