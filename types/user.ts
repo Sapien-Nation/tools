@@ -34,6 +34,11 @@ export interface User {
   updatedAt: ISOString;
   v2Id?: string;
   walletAddress: string;
+  flairBadges: Array<{
+    badgeid: string;
+    name: string;
+    avatar: string;
+  }>;
 }
 
 export interface PublicProfile {

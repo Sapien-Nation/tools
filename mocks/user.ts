@@ -37,6 +37,7 @@ export const mockUser = ({
   username: 'jhon',
   status: UserStatus.A,
   firstName: 'doe',
+  flairBadges: [],
   lastName: 'doe',
   email: 'jhon@test.com',
   createdAt: new Date().toISOString(),
