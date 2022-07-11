@@ -38,6 +38,7 @@ export interface User {
     badgeid: string;
     name: string;
     avatar: string;
+    color: string;
   }>;
 }
 
