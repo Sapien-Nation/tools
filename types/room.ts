@@ -93,9 +93,9 @@ export interface RoomNewMessage {
   extra: {
     roomId: string;
     roomName: string;
-    tribeId: string;
     messageId: string;
     mentions: Array<string>;
+    tribe: { id: string; name: string; avatar: string };
   };
 }
 
@@ -103,7 +103,7 @@ export interface RoomDeleteMessage {
   extra: {
     roomId: string;
     roomName: string;
-    tribeId: string;
+    tribe: { id: string; name: string; avatar: string };
     messageId: string;
   };
 }
