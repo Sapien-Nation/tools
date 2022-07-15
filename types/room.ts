@@ -55,16 +55,6 @@ export interface RoomMessageRoom {
   createdAt: ISOString;
 }
 
-export interface RoomMessage {
-  id: string;
-  content: string;
-  createdAt: ISOString;
-  type: MessageType;
-  status?: string;
-  sender: RoomMessageSender;
-  room?: RoomMessageRoom;
-}
-
 export interface RoomMessageMention {
   avatar: string;
   id: string;
@@ -80,6 +70,11 @@ export interface RoomMessage {
   sender: RoomMessageSender;
   room?: RoomMessageRoom;
   mentions: Array<RoomMessageMention>;
+  reactions?: Array<{
+    count: number;
+    emoji: { id: number | null; name: any };
+    me: boolean;
+  }>;
 }
 
 export interface RoomNewMessage {
