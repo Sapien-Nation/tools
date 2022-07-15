@@ -26,4 +26,5 @@ export interface Notification {
   to: NotificationReceiver;
   by: NotificationSender;
   insertedAt: ISOString;
+  extra: any;
 }
