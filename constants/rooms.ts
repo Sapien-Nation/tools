@@ -6,6 +6,7 @@ export enum AboutObject {
 export enum MessageType {
   Optimistic,
   OptimisticWithAttachment,
+  OptimisticWithError,
   Text = 'C',
   Join = 'J',
 }
