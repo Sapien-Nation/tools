@@ -33,3 +33,10 @@ export interface HomeFeed {
   permissions: MainChannelPermissions;
   private: boolean;
 }
+
+export interface ChannelContributor {
+  id: string;
+  displayName: string;
+  username: string;
+  avatar: string;
+}
