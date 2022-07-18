@@ -29,6 +29,11 @@ export interface RoomTopic {
   name: string;
 }
 
+export interface ProfileTribeThreadRoom {
+  id: string;
+  name: string;
+}
+
 export interface ProfileTribeRoom {
   id: string;
   name: string;
@@ -39,6 +44,7 @@ export interface ProfileTribeRoom {
   unreadMentions: number;
   type: RoomType;
   private: boolean;
+  threads: Array<ProfileTribeThreadRoom>;
 }
 
 export interface ProfileTribe {

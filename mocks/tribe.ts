@@ -12,6 +12,7 @@ import type {
   ProfileTribeChannel,
   ProfileTribePermissions,
   ProfileTribeRoom,
+  ProfileTribeThreadRoom,
   RoomTopic,
   TribeBadge,
   TribeInvite,
@@ -60,6 +61,7 @@ export const mockProfileTribeRoom = ({
   unreadMentions: 0,
   hasUnread: false,
   lastMessageId: '',
+  threads: [],
   type: RoomType.Public,
   private: false,
   ...rest,
@@ -187,5 +189,14 @@ export const mockDiscoverBadge = ({
   name: 'name',
   color: 'red',
   description: 'description',
+  ...rest,
+});
+
+export const mockProfileTribeThreadRoom = ({
+  id = '1000',
+  ...rest
+}: Partial<ProfileTribeThreadRoom> = {}): ProfileTribeThreadRoom => ({
+  id,
+  name: `thread room ${id}`,
   ...rest,
 });
