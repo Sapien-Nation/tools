@@ -34,9 +34,17 @@ export interface HomeFeed {
   private: boolean;
 }
 
+export interface ChannelContributorBadge {
+  id: string;
+  avatar: string;
+  color: string;
+  name: string;
+}
+
 export interface ChannelContributor {
   id: string;
   displayName: string;
   username: string;
   avatar: string;
+  badges: Array<ChannelContributorBadge>;
 }

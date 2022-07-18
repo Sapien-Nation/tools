@@ -6,6 +6,7 @@ export const mockChannelContributor = ({
   ...rest
 }: Partial<ChannelContributor> = {}): ChannelContributor => ({
   id,
+  badges: [],
   displayName: 'jhondoe',
   username: 'jhondoe',
   avatar: '',
