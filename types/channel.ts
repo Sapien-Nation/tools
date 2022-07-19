@@ -2,6 +2,11 @@
 import type { Media } from './common';
 import type { MemberBadge } from './wallet/badge';
 
+export interface ChannelPermissions {
+  canEdit: boolean;
+  canDelete: boolean;
+}
+
 export interface Channel {
   avatar: string;
   cover: string;
@@ -9,6 +14,7 @@ export interface Channel {
   id: string;
   membersCount: number;
   name: string;
+  permissions: ChannelPermissions;
 }
 
 export interface MainChannelPermissions {
