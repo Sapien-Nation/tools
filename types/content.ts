@@ -12,7 +12,8 @@ export interface GroupContent {
 
 export interface ContentOwner {
   id: string;
-  userName: string;
+  displayName: string;
+  username: string;
   avatar: Media | null;
 }
 

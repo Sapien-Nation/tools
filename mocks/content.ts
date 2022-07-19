@@ -9,7 +9,8 @@ export const mockContentOwner = ({
   ...rest
 }: Partial<ContentOwner> = {}): ContentOwner => ({
   id,
-  userName: 'jhondoe',
+  displayName: '@jhondoe',
+  username: 'jhondoe',
   avatar: null,
   ...rest,
 });
