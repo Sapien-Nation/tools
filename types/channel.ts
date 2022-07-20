@@ -20,6 +20,8 @@ export interface Channel {
 export interface MainChannelPermissions {
   canEdit: boolean;
   canDelete: boolean;
+  canPost: boolean;
+  canView: boolean;
 }
 
 export interface HomeFeed {
