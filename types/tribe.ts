@@ -86,6 +86,7 @@ export interface DiscoveryTribe {
   description: string;
   name: string;
   membersCount: number;
+  isUpgraded: boolean;
 }
 
 export interface TribeInvite {

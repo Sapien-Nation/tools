@@ -97,6 +97,7 @@ export const mockDiscoveryTribe = ({
   cover_original: null,
   description: '',
   membersCount: 0,
+  isUpgraded: false,
   ...rest,
 });
 
