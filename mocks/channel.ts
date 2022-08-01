@@ -10,5 +10,6 @@ export const mockChannelContributor = ({
   displayName: 'jhondoe',
   username: 'jhondoe',
   avatar: '',
+  isContributor: false,
   ...rest,
 });

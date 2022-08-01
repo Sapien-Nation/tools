@@ -55,4 +55,5 @@ export interface ChannelContributor {
   username: string;
   avatar: string;
   badges: Array<ChannelContributorBadge>;
+  isContributor: boolean;
 }
