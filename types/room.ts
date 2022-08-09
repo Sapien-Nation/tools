@@ -61,6 +61,13 @@ export interface RoomMessageMention {
   username: string;
 }
 
+export interface RoomMessageAttachment {
+  id: string;
+  url: string;
+  mimeType: string;
+  fileName: string;
+}
+
 export interface RoomMessage {
   id: string;
   content: string;
@@ -75,6 +82,7 @@ export interface RoomMessage {
     emoji: { id: number | null; name: any };
     me: boolean;
   }>;
+  attachments: Array<RoomMessageAttachment>;
 }
 
 export interface RoomNewMessage {
