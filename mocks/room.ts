@@ -76,6 +76,7 @@ export const mockRoomMessage = ({
 }: Partial<RoomMessage> = {}): RoomMessage => ({
   id,
   content: '',
+  attachments: [],
   createdAt: new Date().toISOString(),
   type: MessageType.Text,
   status: '',
