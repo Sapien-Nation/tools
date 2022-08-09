@@ -2,7 +2,7 @@
 import { MessageType } from '../constants/rooms';
 
 // types
-import { RoomMessage } from 'tools/types/room';
+import { RoomMessage } from '../types/room';
 
 const emojis = ['😀', '💯', '👍', '🥶', '🔥', '🦍', '🙈', '🙉', '🙊', '💫'];
 
@@ -14,9 +14,10 @@ export const mockFeed = (): { data: Array<RoomMessage>; nextCursor: any } => {
         content: 'Never gonna give you up',
         createdAt: '2022-07-15T20:30:04.532Z',
         type: MessageType.Text,
+        attachments: [],
         status: 'A',
         sender: {
-          avatar: null,
+          avatar: '',
           badges: [],
           id: '74f5ed20-4ba9-45b5-9f14-0f0e0a025d4e',
           username: 'carlosv',
@@ -30,8 +31,9 @@ export const mockFeed = (): { data: Array<RoomMessage>; nextCursor: any } => {
         createdAt: '2022-07-15T20:31:04.532Z',
         type: MessageType.Text,
         status: 'A',
+        attachments: [],
         sender: {
-          avatar: null,
+          avatar: '',
           badges: [],
           id: '74f5ed20-4ba9-45b5-9f14-0f0e0a025d4e',
           username: 'carlosv',
@@ -53,9 +55,10 @@ export const mockFeed = (): { data: Array<RoomMessage>; nextCursor: any } => {
         content: 'Never gonna run around and desert you',
         createdAt: '2022-07-15T20:32:04.532Z',
         type: MessageType.Text,
+        attachments: [],
         status: 'A',
         sender: {
-          avatar: null,
+          avatar: '',
           badges: [],
           id: '74f5ed20-4ba9-45b5-9f14-0f0e0a025d4e',
           username: 'carlosv',
@@ -78,8 +81,9 @@ export const mockFeed = (): { data: Array<RoomMessage>; nextCursor: any } => {
         createdAt: '2022-07-15T20:33:04.532Z',
         type: MessageType.Text,
         status: 'A',
+        attachments: [],
         sender: {
-          avatar: null,
+          avatar: '',
           badges: [],
           id: '74f5ed20-4ba9-45b5-9f14-0f0e0a025d4e',
           username: 'carlosv',
@@ -102,8 +106,9 @@ export const mockFeed = (): { data: Array<RoomMessage>; nextCursor: any } => {
         createdAt: '2022-07-15T20:34:04.532Z',
         type: MessageType.Text,
         status: 'A',
+        attachments: [],
         sender: {
-          avatar: null,
+          avatar: 'null',
           badges: [],
           id: '74f5ed20-4ba9-45b5-9f14-0f0e0a025d4e',
           username: 'carlosv',
@@ -126,8 +131,9 @@ export const mockFeed = (): { data: Array<RoomMessage>; nextCursor: any } => {
         createdAt: '2022-07-15T20:35:04.532Z',
         type: MessageType.Text,
         status: 'A',
+        attachments: [],
         sender: {
-          avatar: null,
+          avatar: 'null',
           badges: [],
           id: '74f5ed20-4ba9-45b5-9f14-0f0e0a025d4e',
           username: 'carlosv',
