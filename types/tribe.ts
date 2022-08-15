@@ -30,8 +30,11 @@ export interface RoomTopic {
 }
 
 export interface ProfileTribeThreadRoom {
+  archived: boolean;
+  createdAt: string;
   id: string;
   name: string;
+  parentId: string;
 }
 
 export interface ProfileTribeRoom {

@@ -3,6 +3,7 @@ import { ContentMimeType, ContentType } from '../constants/content';
 
 // types
 import type { ISOString, Media } from './common';
+import type { ProfileTribeThreadRoom } from './tribe';
 
 export interface GroupContent {
   id: string;
@@ -26,4 +27,5 @@ export interface Content {
   type: ContentType;
   owner: ContentOwner;
   imagePreview: Media | null;
+  threads: Array<ProfileTribeThreadRoom>;
 }
