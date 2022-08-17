@@ -197,7 +197,10 @@ export const mockProfileTribeThreadRoom = ({
   id = '1000',
   ...rest
 }: Partial<ProfileTribeThreadRoom> = {}): ProfileTribeThreadRoom => ({
+  archived: false,
+  createdAt: 'string',
   id,
   name: `thread room ${id}`,
+  parentId: 'e3049d8f-09c1-493f-a6a5-03313cc8e009',
   ...rest,
 });
