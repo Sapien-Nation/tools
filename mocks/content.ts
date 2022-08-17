@@ -37,5 +37,6 @@ export const mockContent = ({
   owner: mockContentOwner(),
   imagePreview: null,
   mimeType: ContentMimeType.Html,
+  threads: [],
   ...rest,
 });
