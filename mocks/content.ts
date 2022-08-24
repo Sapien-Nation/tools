@@ -38,5 +38,6 @@ export const mockContent = ({
   imagePreview: null,
   mimeType: ContentMimeType.Html,
   threads: [],
+  title: 'Lorem Ipsum',
   ...rest,
 });
