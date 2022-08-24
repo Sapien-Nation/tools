@@ -28,4 +28,5 @@ export interface Content {
   owner: ContentOwner;
   imagePreview: Media | null;
   threads: Array<ProfileTribeThreadRoom>;
+  title: string;
 }
