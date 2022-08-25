@@ -26,7 +26,9 @@ export interface Content {
   createdAt: ISOString;
   type: ContentType;
   owner: ContentOwner;
-  imagePreview: Media | null;
+  preview: Media;
   threads: Array<ProfileTribeThreadRoom>;
   title: string;
+  media: string;
+  link: string;
 }

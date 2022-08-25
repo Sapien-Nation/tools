@@ -7,4 +7,7 @@ export enum ContentType {
 export enum ContentMimeType {
   Html = 'text/html',
   Text = 'text/plain',
+  Image = 'image',
+  Video = 'video',
+  Link = 'text/x-uri',
 }
