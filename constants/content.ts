@@ -1,7 +1,7 @@
 export enum ContentType {
   POST = 'POST',
-  LINK = 'LINK',
-  MEDIA = 'MEDIA',
+  LINK = 'POST-LINK',
+  MEDIA = 'POST-MEDIA',
 }
 
 export enum ContentMimeType {
