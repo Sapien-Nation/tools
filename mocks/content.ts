@@ -35,9 +35,11 @@ export const mockContent = ({
   createdAt: new Date().toISOString(),
   type: ContentType.POST,
   owner: mockContentOwner(),
-  imagePreview: null,
+  preview: null,
   mimeType: ContentMimeType.Html,
   threads: [],
   title: 'Lorem Ipsum',
+  media: '',
+  link: '',
   ...rest,
 });
