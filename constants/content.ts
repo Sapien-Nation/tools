@@ -10,4 +10,5 @@ export enum ContentMimeType {
   Image = 'image',
   Video = 'video',
   Link = 'text/x-uri',
+  Audio = 'audio',
 }
